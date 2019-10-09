@@ -22,6 +22,17 @@
     url('//at.alicdn.com/t/webfont_mgcns3t06p.svg#站酷小薇体') format('svg'); /* iOS 4.1- */
   }
 
+  @font-face {
+    font-family: 'siyuan';
+    font-display: swap;
+    src: url('//at.alicdn.com/t/webfont_vgt35dacgnr.eot'); /* IE9*/
+    src: url('//at.alicdn.com/t/webfont_vgt35dacgnr.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('//at.alicdn.com/t/webfont_vgt35dacgnr.woff2') format('woff2'),
+    url('//at.alicdn.com/t/webfont_vgt35dacgnr.woff') format('woff'), /* chrome、firefox */
+    url('//at.alicdn.com/t/webfont_vgt35dacgnr.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('//at.alicdn.com/t/webfont_vgt35dacgnr.svg#思源黑体-粗') format('svg'); /* iOS 4.1- */
+  }
+
 *{
     margin: 0px;
     padding: 0px;
@@ -30,7 +41,6 @@ body{
     background: #ffffff;
     font-size: 16px;
     font-family: puhui;
-    letter-spacing: 0.05em;
 }
 
 .gray { 
@@ -40,4 +50,18 @@ body{
     -o-filter: grayscale(100%);
     filter: grayscale(100%);
     filter: gray;
+}
+hr{
+  height: 0;
+  font-size: 1em;
+  line-height: 0;
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 1px solid #A7ADBA;
+  margin-bottom: 1.2em;
+  cursor: default;
+  user-select: none;
+}
+a{
+  text-decoration: none;
 }

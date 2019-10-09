@@ -7,9 +7,9 @@
         <p id="des"> 朗月清风，浓烟暗雨，天教憔悴度芳姿.</p>
         <div id="header-nav">
             <div class="nav-item">首页</div>
-            <div class="nav-item">时间垃圾桶</div>
-            <div class="nav-item">时间垃圾桶</div>
-            <div class="nav-item">时间垃圾桶</div>
+            <div class="nav-item">时间的垃圾桶</div>
+            <div class="nav-item">归档</div>
+            <div class="nav-item">关于</div>
         </div>
     </div>
 </template>
@@ -50,9 +50,10 @@ export default {
     line-height: 30px;
     font-size: 18px;
     font-weight: 500;
+    letter-spacing: 0.05em;
 }
 #header-nav{
-    margin-top: 20px;
+    margin-top: 30px;
     text-align: center;
 }
 .nav-item{
