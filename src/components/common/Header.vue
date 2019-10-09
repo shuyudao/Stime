@@ -8,6 +8,8 @@
         <div id="header-nav">
             <div class="nav-item">首页</div>
             <div class="nav-item">时间垃圾桶</div>
+            <div class="nav-item">时间垃圾桶</div>
+            <div class="nav-item">时间垃圾桶</div>
         </div>
     </div>
 </template>
@@ -50,11 +52,15 @@ export default {
     font-weight: 500;
 }
 #header-nav{
-    display: flex;
-    
+    margin-top: 20px;
     text-align: center;
 }
 .nav-item{
-    flex: 1;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 18px;
+    text-decoration: underline;
+    cursor: pointer;
 }
 </style>
