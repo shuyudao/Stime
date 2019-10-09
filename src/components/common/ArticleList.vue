@@ -64,7 +64,6 @@ export default {
     padding-top: 20px;
     line-height: 28px;
     display: -webkit-box;
-
 }
 .t-tag{
     color: #65737E
