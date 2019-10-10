@@ -18,11 +18,12 @@ export default {
     height: 60px;
     background: #f5f5f5;
     color: #666;
+    padding: 0px;
     box-sizing: border-box;
 }
 #footer-main{
     font-size: 14px;
-    width: 740px;
+    width: 860px;
     height: 100%;
     margin: 0 auto
 }

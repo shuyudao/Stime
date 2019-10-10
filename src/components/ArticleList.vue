@@ -1,38 +1,42 @@
 <template>
     <div id="article-list">
-        <div class="article-item">
-            <h3 class="article-title"><span class="in-text">攒了半年的水事</span></h3>
+        <div class="article-item" @click="readPost(item.cid)" v-for="item in post">
+            <h3 class="article-title"><span class="in-text">{{item.title}}</span></h3>
             <div class="article-desc">
-                <p>
-                连续加了一个多星期的班，今天总算可以停一停了，打开博客看了下最新的一篇文章已经是半年前写的了，博客对我真的是越发没有存在感了，但是毕竟写了5年的博客，怎么都不忍就此彻底的关掉它。 我现在所有的工作和生活都源自于当初对博...
-                </p>
+                <p>{{item.desc+"..."}}</p>    
             </div>
             <div class="article-info">
-                <p class="date"><i class="iconfont icon-riqi"/>2019-9-12</p>
-                <p class="views"><i class="iconfont icon-yuedu"/>29002</p>
-                <p class="comments"><i class="iconfont icon-pinglun"/>3</p>
+                <p class="date"><i class="iconfont icon-riqi"/>{{item.year+"-"+item.month+"-"+item.year}}</p>
+                <p class="views"><i class="iconfont icon-yuedu"/>{{item.views==null?0:item.views}}</p>
+                <p class="comments"><i class="iconfont icon-pinglun"/>{{item.commentsNum}}</p>
             </div>
         </div>
 
-        <div class="article-item">
-            <h3 class="article-title"><span class="in-text">攒了半年的水事</span></h3>
-            <div class="article-desc">
-                <p>
-                连续加了一个多星期的班，今天总算可以停一停了，打开博客看了下最新的一篇文章已经是半年前写的了，博客对我真的是越发没有存在感了，但是毕竟写了5年的博客，怎么都不忍就此彻底的关掉它。 我现在所有的工作和生活都源自于当初对博...
-                </p>
-            </div>
-            <div class="article-info">
-                <p class="date"><i class="iconfont icon-riqi"/>2019-9-12</p>
-                <p class="views"><i class="iconfont icon-yuedu"/>29002</p>
-                <p class="comments"><i class="iconfont icon-pinglun"/>3</p>
-            </div>
-        </div>
     </div>
 </template>
 
 <script>
+import {request} from "../network/request"
+
 export default {
-    
+    name:"ArticleList",
+    data(){
+        return{
+            post:[]
+        }
+    },
+    created(){
+        request({
+            url:"/api/posts?showDesc=true"
+        }).then(e => {
+            this.post = e.data.dataSet;
+        })
+    },
+    methods:{
+        readPost(cid){
+            this.$router.push("/article/"+cid)
+        }
+    }
 }
 </script>
 
