@@ -2,18 +2,21 @@
   <div id="app">
     <HomeHeader></HomeHeader>
     <ArticleList></ArticleList>
+    <HomeFooter></HomeFooter>
   </div>
 </template>
 
 <script>
 import HomeHeader from './components/common/Header'
-import ArticleList from './components/common/ArticleList'
+import ArticleList from './components/ArticleList'
+import HomeFooter from './components/common/Footer'
 
 export default {
   name: 'app',
   components: {
     HomeHeader,
-    ArticleList
+    ArticleList,
+    HomeFooter
   }
 }
 </script>

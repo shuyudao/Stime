@@ -42,7 +42,7 @@ export default {
     color: #000;
     font-size: 30px;
     font-weight: 400;
-    font-family: zkxw;
+    font-family: zkxw!important;
 }
 #des{
     color: #65737E;
