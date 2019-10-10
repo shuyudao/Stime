@@ -3,7 +3,7 @@
         <div id="headimg">
             <img class="gray" src="http://q.qlogo.cn/headimg_dl?dst_uin=2423458891&spec=640&img_type=jpg" alt="">
         </div>
-        <h2 id="title">王杰</h2>
+        <h2 id="title">术与道</h2>
         <p id="des"> 朗月清风，浓烟暗雨，天教憔悴度芳姿.</p>
         <div id="header-nav">
             <div class="nav-item">首页</div>
@@ -42,7 +42,7 @@ export default {
     color: #000;
     font-size: 30px;
     font-weight: 400;
-    font-family: zkxw!important;
+    font-family: 'Ma Shan Zheng', cursive;
 }
 #des{
     color: #65737E;

@@ -1,37 +1,9 @@
 @import "./normalize.css";
 
-@font-face {
-    font-family: 'puhui';
-    font-display: swap;
-    src: url('//at.alicdn.com/t/webfont_jhiloyge4x.eot'); /* IE9*/
-    src: url('//at.alicdn.com/t/webfont_jhiloyge4x.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('//at.alicdn.com/t/webfont_jhiloyge4x.woff2') format('woff2'),
-    url('//at.alicdn.com/t/webfont_jhiloyge4x.woff') format('woff'), /* chrome、firefox */
-    url('//at.alicdn.com/t/webfont_jhiloyge4x.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    url('//at.alicdn.com/t/webfont_jhiloyge4x.svg#Alibaba-PuHuiTi-Regular') format('svg'); /* iOS 4.1- */
-  }
+/* 基本字体 */
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+SC&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ma+Shan+Zheng&display=swap');
 
-  @font-face {
-    font-family: 'zkxw';
-    font-display: swap;
-    src: url('//at.alicdn.com/t/webfont_mgcns3t06p.eot'); /* IE9*/
-    src: url('//at.alicdn.com/t/webfont_mgcns3t06p.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('//at.alicdn.com/t/webfont_mgcns3t06p.woff2') format('woff2'),
-    url('//at.alicdn.com/t/webfont_mgcns3t06p.woff') format('woff'), /* chrome、firefox */
-    url('//at.alicdn.com/t/webfont_mgcns3t06p.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    url('//at.alicdn.com/t/webfont_mgcns3t06p.svg#站酷小薇体') format('svg'); /* iOS 4.1- */
-  }
-
-  @font-face {
-    font-family: 'siyuan';
-    font-display: swap;
-    src: url('//at.alicdn.com/t/webfont_vgt35dacgnr.eot'); /* IE9*/
-    src: url('//at.alicdn.com/t/webfont_vgt35dacgnr.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('//at.alicdn.com/t/webfont_vgt35dacgnr.woff2') format('woff2'),
-    url('//at.alicdn.com/t/webfont_vgt35dacgnr.woff') format('woff'), /* chrome、firefox */
-    url('//at.alicdn.com/t/webfont_vgt35dacgnr.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    url('//at.alicdn.com/t/webfont_vgt35dacgnr.svg#思源黑体-粗') format('svg'); /* iOS 4.1- */
-  }
 
 *{
     margin: 0px;
@@ -40,7 +12,6 @@
 body{
     background: #ffffff;
     font-size: 16px;
-    font-family: puhui;
 }
 
 .gray { 

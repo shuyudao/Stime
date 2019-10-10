@@ -37,8 +37,7 @@ export default {
 </script>
 
 <style scoped>
-
-@import url("http://at.alicdn.com/t/font_1449684_w1g3hwq701.css");
+@import url("//at.alicdn.com/t/font_1449684_w1g3hwq701.css");
 .iconfont{
     padding-right: 4px;
 }
@@ -49,18 +48,18 @@ export default {
 .article-item{
     width: 100%;
     margin: 0 auto;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
     cursor: pointer;
 }
 .article-title .in-text,.article-title{
-    color: #434A54;
+    color: #000;
     font-size: 22px;
     font-weight: 600;
-    font-family: siyuan;
+    font-family: 'Noto Serif SC', serif;
 }
 
 .article-desc{
-    color: #65737E;
+    color: #434A54;
     font-size: 16px;
     padding-top: 20px;
     line-height: 28px;
