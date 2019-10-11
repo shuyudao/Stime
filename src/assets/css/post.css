@@ -575,7 +575,7 @@ a:hover {
 }
 
 .post-body {
-  width: 960px;
+  width: 100%;
   margin: 0 auto;
   line-height: 1.8em;
 }

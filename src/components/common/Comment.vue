@@ -21,7 +21,7 @@
             </div>
 
             <div class="comment-meta commentmetadata">
-            <a>{{formatDate(commentsList.created)}}</a>
+            <a class="com-date">{{formatDate(commentsList.created)}}</a>
             </div>
 
             <p>{{commentsList.text}}</p>
@@ -90,11 +90,19 @@ export default {
 </script>
 
 <style scoped>
+
 /* Comments */
 #commentsList li {
   list-style: none;
 }
-
+.url{
+  font-style: normal;
+  text-decoration: none;
+  font-weight: 600;
+}
+.com-date{
+  text-decoration: none;
+}
 .comment-child{
   padding-left: 30px
 }

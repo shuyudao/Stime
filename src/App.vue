@@ -8,9 +8,7 @@
 
 <script>
 import HomeHeader from './components/common/Header'
-import ArticleList from './components/ArticleList'
 import HomeFooter from './components/common/Footer'
-import Article from './components/Article'
 
 import router from './router/index';
 
@@ -18,9 +16,7 @@ export default {
   name: 'app',
   components: {
     HomeHeader,
-    ArticleList,
-    HomeFooter,
-    Article
+    HomeFooter
   },
   router
 }

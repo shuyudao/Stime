@@ -6,7 +6,7 @@
                 <p>{{item.desc+"..."}}</p>    
             </div>
             <div class="article-info">
-                <p class="date"><i class="iconfont icon-riqi"/>{{item.year+"-"+item.month+"-"+item.year}}</p>
+                <p class="date"><i class="iconfont icon-riqi"/>{{item.year+"-"+item.month+"-"+item.day}}</p>
                 <p class="views"><i class="iconfont icon-yuedu"/>{{item.views==null?0:item.views}}</p>
                 <p class="comments"><i class="iconfont icon-pinglun"/>{{item.commentsNum}}</p>
             </div>

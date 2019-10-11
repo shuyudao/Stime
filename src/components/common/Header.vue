@@ -6,8 +6,8 @@
         <h2 id="title">术与道</h2>
         <p id="des"> 朗月清风，浓烟暗雨，天教憔悴度芳姿.</p>
         <div id="header-nav">
-            <div class="nav-item">首页</div>
-            <div class="nav-item">时间的垃圾桶</div>
+            <div class="nav-item"><router-link to="/">首页</router-link></div>
+            <div class="nav-item"><router-link to="/time">时间的垃圾桶</router-link></div>
             <div class="nav-item">归档</div>
             <div class="nav-item">关于</div>
         </div>
@@ -63,5 +63,8 @@ export default {
     font-size: 18px;
     text-decoration: underline;
     cursor: pointer;
+}
+#header-nav a{
+    color: #444;
 }
 </style>
