@@ -51,7 +51,7 @@ export default {
     },
     methods:{
       scr(){
-        document.getElementById("comments").scrollIntoView();
+        comments.scrollIntoView();
       }
     },
     computed: {

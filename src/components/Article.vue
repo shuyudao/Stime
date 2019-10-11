@@ -73,11 +73,16 @@ export default {
           this.getComments();
           this.comment.parent = null;
           this.comment.text="";
+
+          window.history.pushState({},"","./"+this.cid);
+
           if(e.status=="error"){
             this.alert=e.message;
           }else{
             this.alert="评论成功";
           }
+        }).catch(e => {
+          this.alert="评论过于频繁，请稍后再试";
         });
         
       }else{
@@ -96,6 +101,7 @@ export default {
     Comment
   },
   created() {
+    header.scrollIntoView();
     this.cid = this.$route.params.id;
     request({
       url: "/api/post?cid=" + this.$route.params.id

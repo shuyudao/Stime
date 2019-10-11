@@ -34,7 +34,7 @@ export default {
     },
     methods:{
         readPost(cid){
-            this.$router.push("/index.php/archives/"+cid)
+            this.$router.push("/archives/"+cid)
         }
     }
 }
