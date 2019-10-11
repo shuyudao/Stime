@@ -7,9 +7,9 @@ const ArticleList = () => import("../components/ArticleList")
 Vue.use(VueRouter)
 const router = new VueRouter({
     routes:[
-        {path:'/',redirect:'/index'},
-        {path:'/index',component:ArticleList},
-        {path:"/article/:id",component:Article}
+        {path:'/',redirect:'/index.php'},
+        {path:'/index.php',component:ArticleList},
+        {path:"/index.php/archives/:id",component:Article}
     ],
     mode:'history'
 })

@@ -469,10 +469,6 @@ template {
   display: none;
 }
 
-html {
-  font-family: 'Noto Serif SC', serif;
-  font-size: 16px;
-}
 
 blockquote {
   margin: 0;
