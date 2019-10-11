@@ -70,12 +70,26 @@ export default {
           url:"/api/comment",
           data:this.comment
         }).then(e => {
-          console.log(e)
+          this.getComments();
+          this.comment.parent = null;
+          this.comment.text="";
+          if(e.status=="error"){
+            this.alert=e.message;
+          }else{
+            this.alert="评论成功";
+          }
         });
         
       }else{
         this.alert="请确保昵称、邮箱、内容不为空"
       }
+    },
+    getComments(){
+      request({
+        url: "/api/comments?cid=" + this.$route.params.id
+      }).then(e => {
+        this.comments = e.data.dataSet;
+      });
     }
   },
   components:{
@@ -91,12 +105,7 @@ export default {
       this.comment.cid = e.data.cid
     });
 
-    request({
-      url: "/api/comments?cid=" + this.$route.params.id
-    }).then(e => {
-      this.comments = e.data.dataSet;
-
-    });
+    this.getComments();
   }
 };
 </script>
