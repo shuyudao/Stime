@@ -1,165 +1,94 @@
 <template>
-  <div id="time-main">
-    <div id="line"></div>
-    <ul class="time-axis">
-      <li class="time-axis-item">
-        <div class="spot"></div>
-        <div class="ke clear">
-          <div class="g-lin"></div>
-          <div class="item">
-            <div class="time-axis-date">
-              2003.10.9
-              <span></span>
-            </div>
-            <div class="time-box">
-              <p>初涉教育行业</p>
-              <div class="gallery type-d clear">
-                <a
-                  href="https://jinsom.cn/wp-content/uploads/2019/09/QQ图片20190920001801.jpg"
-                  data-fancybox="gallery-2247"
-                  class="opacity"
-                >
-                  <img src="https://jinsom.cn/wp-content/uploads/2019/09/QQ图片20190920001801.jpg" />
-                </a>
-                <a
-                  href="https://jinsom.cn/wp-content/uploads/2019/09/QQ图片20190920001806.jpg"
-                  data-fancybox="gallery-2247"
-                  class="opacity"
-                >
-                  <img src="https://jinsom.cn/wp-content/uploads/2019/09/QQ图片20190920001806.jpg" />
-                </a>
-                <a
-                  href="https://jinsom.cn/wp-content/uploads/2019/09/QQ图片20190920001814.jpg"
-                  data-fancybox="gallery-2247"
-                  class="opacity"
-                >
-                  <img src="https://jinsom.cn/wp-content/uploads/2019/09/QQ图片20190920001814.jpg" />
-                </a>
-                <a
-                  href="https://jinsom.cn/wp-content/uploads/2019/09/QQ图片20190920001819.jpg"
-                  data-fancybox="gallery-2247"
-                  class="opacity"
-                >
-                  <img src="https://jinsom.cn/wp-content/uploads/2019/09/QQ图片20190920001819.jpg" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </li>
-        <li class="time-axis-item clear">
-        <div class="spot"></div>
-        <div class="ke clear">
-          <div class="g-lin"></div>
-          <div class="item">
-            <div class="time-axis-date">
-              2003.10.9
-              <span></span>
-            </div>
-            <div class="time-box">
-              <p>初涉教育行业</p>
-              
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="time-axis-item clear">
-        <div class="spot"></div>
-        <div class="ke clear">
-          <div class="g-lin"></div>
-          <div class="item">
-            <div class="time-axis-date">
-              2003.10.9
-              <span></span>
-            </div>
-            <div class="time-box">
-              <p>对我来说，有没有活下去的勇气，取决于我在世界上有没有创造价值。</p>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="time-axis-item clear">
-        <div class="spot"></div>
-        <div class="ke clear">
-          <div class="g-lin"></div>
-          <div class="item">
-            <div class="time-axis-date">
-              2003.10.9
-              <span></span>
-            </div>
-            <div class="time-box">
-              <p>这是一位在国外当老师的妈妈，特意来信想为她的儿子寻问关于编程的问题。当时我回信尽可能地写了很多浅薄的意见和经验分享，后来就再没有通信。这位母亲让我感动。</p>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="time-axis-item clear">
-        <div class="spot"></div>
-        <div class="ke clear">
-          <div class="g-lin"></div>
-          <div class="item">
-            <div class="time-axis-date">
-              2003.10.9
-              <span></span>
-            </div>
-            <div class="time-box">
-              <p>初涉教育行业</p>
-              <div class="gallery type-d clear">
-                <a
-                  href="https://jinsom.cn/wp-content/uploads/2019/09/QQ图片20190920001801.jpg"
-                  data-fancybox="gallery-2247"
-                  class="opacity"
-                >
-                  <img src="https://jinsom.cn/wp-content/uploads/2019/09/QQ图片20190920001801.jpg" />
-                </a>
-                <a
-                  href="https://jinsom.cn/wp-content/uploads/2019/09/QQ图片20190920001806.jpg"
-                  data-fancybox="gallery-2247"
-                  class="opacity"
-                >
-                  <img src="https://jinsom.cn/wp-content/uploads/2019/09/QQ图片20190920001806.jpg" />
-                </a>
-                <a
-                  href="https://jinsom.cn/wp-content/uploads/2019/09/QQ图片20190920001814.jpg"
-                  data-fancybox="gallery-2247"
-                  class="opacity"
-                >
-                  <img src="https://jinsom.cn/wp-content/uploads/2019/09/QQ图片20190920001814.jpg" />
-                </a>
-                <a
-                  href="https://jinsom.cn/wp-content/uploads/2019/09/QQ图片20190920001819.jpg"
-                  data-fancybox="gallery-2247"
-                  class="opacity"
-                >
-                  <img src="https://jinsom.cn/wp-content/uploads/2019/09/QQ图片20190920001819.jpg" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="time-axis-item clear">
-        <div class="spot"></div>
-        <div class="ke clear">
-          <div class="g-lin"></div>
-          <div class="item">
-            <div class="time-axis-date">
-              2003.10.9
-              <span></span>
-            </div>
-            <div class="time-box">
-              <p>初涉教育行业</p>
-              <div class="gallery type-e clear">
-<a href="https://jinsom.cn/wp-content/uploads/2019/09/QQ图片20190920014152.jpg" data-fancybox="gallery-2198" class="opacity"><img src="https://jinsom.cn/wp-content/uploads/2019/09/QQ图片20190920014152.jpg"></a><a href="https://jinsom.cn/wp-content/uploads/2019/09/QQ图片20190920014157.jpg" data-fancybox="gallery-2198" class="opacity"><img src="https://jinsom.cn/wp-content/uploads/2019/09/QQ图片20190920014157.jpg"></a><a href="https://jinsom.cn/wp-content/uploads/2019/09/QQ图片20190920014201.jpg" data-fancybox="gallery-2198" class="opacity"><img src="https://jinsom.cn/wp-content/uploads/2019/09/QQ图片20190920014201.jpg"></a>	
+  <div class="jinsom-post-list clear" page="2" type="all">
+<li id="jinsom-post-2247 image">
+<div class="header">
+<span class="type" title="图集"><i class="jinsom-icon jinsom-photo"></i></span>
+<span class="time">3周前</span>
 </div>
-            </div>
-          </div>
-        </div>
-      </li>
+<div class="content">
+<h1></h1>
+<p>纳木错三圣石，无人机拍的</p>
+<div class="gallery type-d clear">
+<a href="https://jinsom.cn/wp-content/uploads/2019/09/QQ图片20190920001801.jpg" data-fancybox="gallery-2247" class="opacity"><img src="https://jinsom.cn/wp-content/uploads/2019/09/QQ图片20190920001801.jpg"></a><a href="https://jinsom.cn/wp-content/uploads/2019/09/QQ图片20190920001806.jpg" data-fancybox="gallery-2247" class="opacity"><img src="https://jinsom.cn/wp-content/uploads/2019/09/QQ图片20190920001806.jpg"></a><a href="https://jinsom.cn/wp-content/uploads/2019/09/QQ图片20190920001814.jpg" data-fancybox="gallery-2247" class="opacity"><img src="https://jinsom.cn/wp-content/uploads/2019/09/QQ图片20190920001814.jpg"></a><a href="https://jinsom.cn/wp-content/uploads/2019/09/QQ图片20190920001819.jpg" data-fancybox="gallery-2247" class="opacity"><img src="https://jinsom.cn/wp-content/uploads/2019/09/QQ图片20190920001819.jpg"></a>	
+</div>
+</div>
+<div class="footer">
+<div class="like">
+<i class="jinsom-icon jinsom-no-like" onclick="jinsom_like_post(2247,this)"></i><span>4</span></div>
+<div class="comment" onclick="jinsom_open_right_sidebar(2247)"><i class="jinsom-icon jinsom-comment"></i><span>2</span></div>
+</div></li><li id="jinsom-post-2239 words">
+<div class="header">
+<span class="type" title="动态"><i class="jinsom-icon jinsom-words"></i></span>
+<span class="time">3周前</span>
+</div>
+<div class="content">
+<h1></h1>
 
-      
-    </ul>
-  </div>
+<p>过自己想要过的生活！</p>
+</div>
+<div class="footer">
+<div class="like">
+<i class="jinsom-icon jinsom-no-like" onclick="jinsom_like_post(2239,this)"></i><span>6</span></div>
+<div class="comment" onclick="jinsom_open_right_sidebar(2239)"><i class="jinsom-icon jinsom-comment"></i><span></span></div>
+</div></li><li id="jinsom-post-2236 words">
+<div class="header">
+<span class="type" title="动态"><i class="jinsom-icon jinsom-words"></i></span>
+<span class="time">1月前</span>
+</div>
+<div class="content">
+<h1></h1>
+
+<p>累。</p>
+</div>
+<div class="footer">
+<div class="like">
+<i class="jinsom-icon jinsom-no-like" onclick="jinsom_like_post(2236,this)"></i><span>5</span></div>
+<div class="comment" onclick="jinsom_open_right_sidebar(2236)"><i class="jinsom-icon jinsom-comment"></i><span>1</span></div>
+</div></li><li id="jinsom-post-2234 words">
+<div class="header">
+<span class="type" title="动态"><i class="jinsom-icon jinsom-words"></i></span>
+<span class="time">2月前</span>
+</div>
+<div class="content">
+<h1></h1>
+
+<p>能把自己时间安排的好好都是很了不起的一件事。</p>
+</div>
+<div class="footer">
+<div class="like">
+<i class="jinsom-icon jinsom-no-like" onclick="jinsom_like_post(2234,this)"></i><span>7</span></div>
+<div class="comment" onclick="jinsom_open_right_sidebar(2234)"><i class="jinsom-icon jinsom-comment"></i><span>1</span></div>
+</div></li><li id="jinsom-post-2232 words">
+<div class="header">
+<span class="type" title="动态"><i class="jinsom-icon jinsom-words"></i></span>
+<span class="time">2月前</span>
+</div>
+<div class="content">
+<h1></h1>
+
+<p>按自己计划慢慢去做，一口吞不了大象。</p>
+</div>
+<div class="footer">
+<div class="like">
+<i class="jinsom-icon jinsom-no-like" onclick="jinsom_like_post(2232,this)"></i><span>5</span></div>
+<div class="comment" onclick="jinsom_open_right_sidebar(2232)"><i class="jinsom-icon jinsom-comment"></i><span></span></div>
+</div></li><li id="jinsom-post-2230 words">
+<div class="header">
+<span class="type" title="动态"><i class="jinsom-icon jinsom-words"></i></span>
+<span class="time">2月前</span>
+</div>
+<div class="content">
+<h1></h1>
+
+<p>有些事听听就好，别太认真。</p>
+</div>
+<div class="footer">
+<div class="like">
+<i class="jinsom-icon jinsom-no-like" onclick="jinsom_like_post(2230,this)"></i><span>4</span></div>
+<div class="comment" onclick="jinsom_open_right_sidebar(2230)"><i class="jinsom-icon jinsom-comment"></i><span>1</span></div>
+</div></li>
+
+</div>
 </template>
 
 <script>
@@ -167,139 +96,483 @@ export default {};
 </script>
 
 <style scoped>
-li {
-  list-style: none;
-}
-#line {
-  width: 4px;
-  height: 100%;
-  background-color: #666666;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  margin-left: -2px;
-}
-.spot {
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  left: 50%;
-  margin-left: -14px;
-  background-color: #666666;
-  border: 4px solid #f6f7f8;
-  border-radius: 20px;
-  margin-top: 5px;
+@font-face {font-family: "jinsom-icon";
+  src: url('//at.alicdn.com/t/font_1009731_t1aii462yjj.eot?t=1557733503335'); /* IE9 */
+  src: url('//at.alicdn.com/t/font_1009731_t1aii462yjj.eot?t=1557733503335#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,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') format('woff2'),
+  url('//at.alicdn.com/t/font_1009731_t1aii462yjj.woff?t=1557733503335') format('woff'),
+  url('//at.alicdn.com/t/font_1009731_t1aii462yjj.ttf?t=1557733503335') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('//at.alicdn.com/t/font_1009731_t1aii462yjj.svg?t=1557733503335#jinsom-icon') format('svg'); /* iOS 4.1- */
 }
 
-.ke {
-  width: 50%;
-  height: 100%;
+.jinsom-icon {
+  font-family: "jinsom-icon" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-.g-lin {
-  width: 200px;
-  height: 4px;
-  background-color: #666666;
-  position: relative;
-  top: 12px;
-  z-index: -1;
-  float: right;
-  right: 0px;
+
+.jinsom-like:before {
+  content: "\e668";
 }
-.item {
-  width: 90%;
-  min-height: 50px;
-  float: left;
-  background-color: #fff;
-  position: relative;
-  box-sizing: border-box;
-  box-shadow: 0px 0px 3px 1px #dcdcdc;
-  color: #444;
-  padding: 20px;
-  border-radius: 3px;
-  transition: all 0.3s ease;
-  line-height: 26px;
+
+.jinsom-top:before {
+  content: "\e786";
 }
-.time-axis-date{
+
+.jinsom-no-like:before {
+  content: "\e635";
+}
+
+.jinsom-rand:before {
+  content: "\e65d";
+}
+
+.jinsom-photo:before {
+  content: "\e605";
+}
+
+.jinsom-music:before {
+  content: "\e760";
+}
+
+.jinsom-comment:before {
+  content: "\e689";
+}
+
+.jinsom-right-top:before {
+  content: "\e670";
+}
+
+.jinsom-words:before {
+  content: "\e6b7";
+}
+
+.jinsom-video:before {
+  content: "\e66b";
+}
+
+.jinsom-right:before {
+  content: "\e600";
+}
+
+/*头部*/
+.jinsom-header {
+    background: #ffffff;
+    padding: 20px 10%;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    box-sizing: border-box;
+    height: 60px;
+}
+.jinsom-header .logo {
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    top: 10px;
+    cursor: pointer;
+    height: 100px;
+}
+.jinsom-header .logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 6px solid #fff;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+    transition: .4s all ease-in-out;
+}
+.jinsom-header .logo img:hover {
+	transform: rotate(360deg);
+}
+.jinsom-header .left {
+    width: 50%;
+    float: left;
+    display: flex;
+}
+.jinsom-header .right {
+    width: 50%;
+    float: right;
+    display: flex;
+}
+.opacity:hover{
+    opacity: 0.8;
+}
+.clear:after{
+    display: block;
+    content: '';
+    clear: both;
+}
+li{
+	list-style: none;
+}
+p {
+    margin: 0;
+}
+input{
+    -webkit-appearance: none;
+}
+.jinsom-main {
+    position: relative;
+}
+
+/*内容区*/
+.jinsom-content {
+    padding-top: 120px;
+    margin-bottom: 200px;
+    background-color: #e2e2e2;
+    padding-bottom: 200px;
+}
+.jinsom-post-list {
+    width: 80%;
+    margin: auto;
+    position: relative;
+    max-width: 1200px;
+    margin-bottom: 60px;
+}
+.jinsom-post-list:before {
+    background-color: #aaa;
+    content: "";
+    left: 50%;
+    top: 10px;
+    bottom: 100px;
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    margin-left: -1px;
+}
+.jinsom-post-list li {
+    width: 50%;
+    padding-top: 60px;
+    position: relative;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: jinsom-fadeInUp;
+}
+.jinsom-post-list li:nth-child(odd) {
+    float: left;
+    clear: left;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+.jinsom-post-list li:nth-child(even) {
+    float: right;
+    clear: right;
+    padding-left: 20px;
+    box-sizing: border-box;
+    margin-top: 60px;
+}
+.jinsom-post-list li:nth-child(1) {
+    animation-delay: 0.1s;
+}
+.jinsom-post-list li:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.jinsom-post-list li:nth-child(3) {
+    animation-delay: 0.3s;
+}
+.jinsom-post-list li:nth-child(4) {
+    animation-delay: 0.4s;
+}
+.jinsom-post-list li:nth-child(5) {
+    animation-delay: 0.5s;
+}
+.jinsom-post-list li .content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 3px;
+    position: relative;
+    transition: all .3s ease;
+    word-break: break-all;
+    box-shadow: 0px 0px 4px rgba(166, 166, 166, 0.5);
+}
+.jinsom-post-list li .content p {
+    line-height: 26px;
+    font-size: 0.928571429rem;
+    color: #444;
+}
+.jinsom-post-list li .content h1 {
+    font-size: 16px;
+    line-height: 30px;
+}
+.jinsom-post-list li .header span:hover,.jinsom-post-list li .content:hover,.jinsom-post-list li .footer>div:hover {
+    transform: translateY(-4px);
+}
+.jinsom-post-list li .header {
+    margin-bottom: 10px;
+    display: flex;
+}
+.jinsom-post-list li:nth-child(odd) .header {
+    position: absolute;
+    right: 20px;
+}
+.jinsom-post-list li:nth-child(odd) .header span:last-child {
+    margin-right: 0px;
+}
+.jinsom-post-list li .header span {
+    padding: 8px 12px 9px;
+    color: #666;
+    background-color: #fff;
+    display: inline-block;
     font-size: 12px;
-    color: #a4a4a4
+    border-radius: 2px;
+    transition: all .3s ease;
+    cursor: pointer;
+    margin-right: 5px;
+    box-shadow: 0px 0px 4px rgba(166, 166, 166, 0.5);
+
 }
 
-li:nth-child(even) .ke {
-  float: right;
+.jinsom-post-list li:nth-child(odd) .content {
+    margin-top: 43px;
 }
-li:nth-child(even) .g-lin {
-  float: left;
-  left: 0;
+.jinsom-post-list li .content:before {
+    position: absolute;
+    right: -28px;
+    top: -12px;
+    content: "";
+    height: 4px;
+    width: 12px;
+    border: 4px solid #fff;
+    -webkit-border-radius: 8px;
+    background: #666666;
 }
-li:nth-child(even) .item {
-  margin-left: 40px;
+.jinsom-post-list li:nth-child(even) .content:before {
+    left: -28px;
 }
-
-.time-axis-item {
-  width: 100%;
-  margin-top: 40px;
+.jinsom-more-post {
+    width: 40px;
+    background-color: #fff;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 35px;
+    color: #999;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 5%;
+    letter-spacing: 1px;
+    position: relative;
 }
-#time-main {
-  width: 1070px;
-  margin: 20px auto;
-  position: relative;
+.jinsom-more-post.on {
+     animation: rotate .5s linear infinite; 
 }
-.clear:after {
-  display: block;
-  content: "";
-  clear: both;
-}
-
-li .gallery a {
-  display: inline-block;
-  margin-top: 20px;
-  border-radius: 2px;
-  background-color: #f5f5f5;
-}
-.gallery a img {
-  max-width: 100%;
-  border-radius: 2px;
-}
-li img {
-  max-width: 100%;
-}
-li .gallery.type-a a:nth-child(3n),
-li .gallery.type-b a:nth-child(3n + 1),
-li .gallery.type-d a:nth-child(2n),
-li .gallery.type-e a:nth-child(2n + 1) {
-  margin-right: 0;
-}
-
-/* d，e */
-li .gallery.type-d a,
-li .gallery.type-e a {
-  float: left;
-  width: 47.5%;
-  margin-right: 5%;
-  overflow: hidden;
-  height: 150px;
-}
-li .gallery.type-d a img,
-li .gallery.type-e a img {
-  min-height: 150px;
+.jinsom-more-post:hover:before {
+    content: '';
+    height: 8px;
+    width: 40px;
+    background-color: #000;
+    opacity: .2;
+    border-radius: 50%;
+    position: absolute;
+    top: 42px;
+    left: 0;
 }
 
-/* a，b */
-li .gallery.type-a a,
-li .gallery.type-b a {
-  float: left;
-  width: 30.5555%;
-  margin-right: 4.11%;
-  overflow: hidden;
-  height: 120px;
+/*喜欢*/
+.jinsom-post-list li .footer {
+    padding: 8px 5px;
+    color: #999;
 }
-li .gallery.type-a a img,
-li .gallery.type-b a img {
-  min-height: 120px;
+.jinsom-post-list li:nth-child(even) .footer {
+    text-align: right;
 }
-li .gallery.type-b a:first-child,
-li .gallery.type-e a:first-child {
-  width: 100%;
-  height: auto;
+.jinsom-post-list li .footer i {
+    font-size: 20px;
+    margin-right: 5px;
+}
+.jinsom-post-list li .footer>div {
+    display: inline-block;
+    margin-right: 20px;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+.jinsom-post-list li:nth-child(even) .footer>div {
+    margin-right: 0;
+    margin-left: 20px;
+}
+.jinsom-like {
+    color: #E91E63;
+}
+.jinsom-content .totop {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: -22px;
+    left: 50%;
+    margin-left: -20px;
+    border-radius: 100%;
+    background-color: #e2e2e2;
+    cursor: pointer;
+    text-align: center;
+    color: #3b3b45;
+    line-height: 40px;
+    z-index: 2;
+}
+.jinsom-content .totop:hover {
+    color: #f00;
+}
+
+/*底部*/
+.jinsom-footer {
+    height: 200px;
+    background-color: #3b3b45;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    z-index: -1;
+    color: #fff;
+}
+.jinsom-footer .logo {
+    text-align: center;
+    font-size: 60px;
+    line-height: 200px;
+    transition: all 0.5s;
+}
+.jinsom-footer .logo:hover {
+    color: #F44336;
+}
+.jinsom-footer .bottom {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #999;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+
+
+/*动画*/
+
+/*渐现*/
+@keyframes jinsom-fadeInUp {
+0% {
+opacity: 0;
+transform: translateY(20px);
+}
+100% {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+/*跳动*/
+@keyframes rotate {
+0% {
+transform: translateY(0) ;
+}
+25% {
+transform: translateY(10px);
+}
+50% {
+transform: translateY(20px) scale(1.1, 0.9);
+}
+75% {
+transform: translateY(10px) ;
+}
+100% {
+transform: translateY(0) ;
+}
+}
+
+
+
+
+
+
+
+
+/*图集*/
+.jinsom-photo {
+    color: #4CAF50;
+}
+.jinsom-post-list li .content .gallery a {
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 2px;
+    background-color: #f5f5f5;
+}
+.jinsom-post-list li .content .gallery a img {
+    max-width: 100%;
+    border-radius: 2px;
+}
+.jinsom-post-list li .content img {
+    max-width: 100%;
+}
+.jinsom-post-list li .content .gallery.type-a a:nth-child(3n),.jinsom-post-list li .content .gallery.type-b a:nth-child(3n+1),.jinsom-post-list li .content .gallery.type-d a:nth-child(2n),.jinsom-post-list li .content .gallery.type-e a:nth-child(2n+1) {
+    margin-right: 0;
+}
+
+
+/*类型A & B*/
+.jinsom-post-list li .content .gallery.type-a a,.jinsom-post-list li .content .gallery.type-b a {
+    float: left;
+    width: 30.5555%;
+    margin-right: 4.11%;
+    overflow: hidden;
+    height: 120px;
+}
+.jinsom-post-list li .content .gallery.type-a a img,.jinsom-post-list li .content .gallery.type-b a img{
+    min-height: 120px;
+}
+.jinsom-post-list li .content .gallery.type-b a:first-child,.jinsom-post-list li .content .gallery.type-e a:first-child {
+    width: 100%;
+    height: auto;
+}
+
+/*类型D & E*/
+.jinsom-post-list li .content .gallery.type-d a,.jinsom-post-list li .content .gallery.type-e a {
+    float: left;
+    width: 47.911%;
+    margin-right: 4.11%;
+    overflow: hidden;
+    height: 150px;
+}
+.jinsom-post-list li .content .gallery.type-d a img,.jinsom-post-list li .content .gallery.type-e a img{
+    min-height: 150px;
+}
+
+
+/*视频*/
+.jinsom-video {
+    color: #F44336;
+}
+.jinsom-post-list li .content .video, .jinsom-post-list li .content iframe, .jinsom-post-list li .content .music {
+    margin-top: 20px;
+}
+.jinsom-post-list li .content iframe {
+    max-width: 100%;
+    height: 300px;
+    width: 100%;
+}
+.video .xgplayer-poster,.video .xgplayer-name,.video .xgplayer-prev,.video .xgplayer-next,.video .xgplayer-forward,.video .xgplayer-backward{
+    display: none;
+}
+.video.xgplayer {
+    background-size: cover;
+}
+.xgplayer-playing xg-cover.xgplayer-cover img {
+    display: none;
+}
+
+/*音乐*/
+.jinsom-music {
+    color: #2196F3;
+}
+.xgplayer-music .xgplayer-poster,.xgplayer-music .xgplayer-forward,.xgplayer-music .xgplayer-backward{
+    display: none;
+}
+.xgplayer-music .xgplayer-controls {
+    background-image: none;
+}
+.music xg-cover.xgplayer-cover {
+    display: none;
 }
 </style>
