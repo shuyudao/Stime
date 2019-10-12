@@ -5,13 +5,15 @@ import VueRouter from 'vue-router'
 const Article = () => import("../components/Article")
 const ArticleList = () => import("../components/ArticleList")
 const Time = () => import("../components/Time")
+const Archives = () => import("../components/Archives")
 
 Vue.use(VueRouter)
 const router = new VueRouter({
     routes:[
         {path:'/',component:ArticleList},
         {path:"/archives/:id",component:Article},
-        {path:"/time",component:Time}
+        {path:"/time",component:Time},
+        {path:"/record",component:Archives}
     ],
     mode:'history'
 })

@@ -8,7 +8,7 @@
         <div id="header-nav">
             <div class="nav-item"><router-link to="/">首页</router-link></div>
             <div class="nav-item"><router-link to="/time">时间的垃圾桶</router-link></div>
-            <div class="nav-item">归档</div>
+            <div class="nav-item"><router-link to="/record">归档</router-link></div>
             <div class="nav-item">关于</div>
         </div>
     </div>

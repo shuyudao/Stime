@@ -48,6 +48,7 @@ export default {
 #article-list{
     width: 740px;
     margin: 40px auto;
+    margin-bottom: 80px;
 }
 .article-item{
     width: 100%;

@@ -13,6 +13,7 @@ export default {
 </script>
 
 <style scoped>
+
 #footer{
     width: 100%;
     height: 60px;
@@ -20,12 +21,16 @@ export default {
     color: #666;
     padding: 0px;
     box-sizing: border-box;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
 }
 #footer-main{
     font-size: 14px;
-    width: 860px;
+    width: 740px;
     height: 100%;
-    margin: 0 auto
+    margin: 0 auto;
+    text-align: center;
 }
 #footer-main p{
     line-height: 60px;

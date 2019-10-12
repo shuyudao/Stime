@@ -14,7 +14,15 @@ body{
     font-size: 16px;
     overflow: overlay;
 }
-
+html,body{
+  height: 100%;
+}
+#app{
+  min-height: 100%;
+  position: relative;
+  padding: 1px;
+  box-sizing: border-box;
+}
 .gray { 
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
