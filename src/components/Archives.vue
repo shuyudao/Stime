@@ -26,7 +26,7 @@ export default {
     },
     methods:{
         openPOst(cid){
-             this.$router.push("/archives/"+cid);
+             this.$router.push("./archives/"+cid);
         }
     }
 }
