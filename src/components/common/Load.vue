@@ -18,6 +18,9 @@ export default {
 </script>
 
 <style scoped>
+.wrapp{
+  height: 100px;
+}
 h1.loadingtext {
     text-align: center;
     text-transform: uppercase;

@@ -1,22 +1,43 @@
 <template>
     <div id="header">
         <div id="headimg">
-            <img class="gray" src="http://q.qlogo.cn/headimg_dl?dst_uin=2423458891&spec=640&img_type=jpg" alt="">
+            <img class="" src="http://q.qlogo.cn/headimg_dl?dst_uin=2423458891&spec=640&img_type=jpg" alt="">
         </div>
         <h2 id="title">术与道</h2>
         <p id="des"> 朗月清风，浓烟暗雨，天教憔悴度芳姿.</p>
         <div id="header-nav">
             <div class="nav-item"><router-link to="/">首页</router-link></div>
-            <div class="nav-item"><router-link to="/time">时间的垃圾桶</router-link></div>
-            <div class="nav-item"><router-link to="/record">归档</router-link></div>
-            <div class="nav-item">关于</div>
+            <div class="nav-item"><router-link to="/index.php/time">时间的垃圾桶</router-link></div>
+            <div class="nav-item"><router-link to="/index.php/record">归档</router-link></div>
+            <div class="nav-item" v-for="item in pages"><a @click="openPage(item.cid)">{{item.title}}</a></div>
         </div>
     </div>
 </template>
 
 <script>
+import { request } from "../../network/request"
+
 export default {
-    
+    name:"Header",
+    data(){
+        return{
+            pages:[]
+        }
+    },
+    created(){
+        request({
+            url:"/api/pages"
+        }).then(e => {
+            
+            this.pages = e.data.dataSet;
+        })
+    },
+    methods:{
+        openPage(cid){
+            this.$router.push('/')
+            this.$router.push("/index.php/pages/"+cid);
+        }
+    }
 }
 </script>
 

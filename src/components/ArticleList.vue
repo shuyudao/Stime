@@ -39,7 +39,7 @@ export default {
     },
     methods:{
         readPost(cid){
-            this.$router.push("/archives/"+cid)
+            this.$router.push("/index.php/archives/"+cid)
         },
         getArticles(){
             this.getComplete = false;
@@ -50,7 +50,6 @@ export default {
                 }).then(e => {
                     this.post = this.post.concat(e.data.dataSet);
                     this.getComplete = true;
-                    console.log(11);
                     
                     if(e.data.dataSet.length > 0 ){
                         this.loadend = false;

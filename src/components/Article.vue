@@ -12,7 +12,7 @@
 
 <script>
 import { request } from "../network/request";
-import Comment from "../components/common/Comment"
+import Comment from "../components/common/Comment";
 
 export default {
   name: "Article",
@@ -20,22 +20,34 @@ export default {
     return {
       cid: 0,
       post: {},
-      csrfToken:""
+      csrfToken: ""
     };
   },
   components: {
     Comment
   },
+  methods: {
+    getPost() {
+      request({
+        url: "/api/post?cid=" + this.$route.params.id
+      }).then(e => {
+        this.post = e.data;
+        this.csrfToken = e.data.csrfToken;
+      });
+    }
+  },
   created() {
     header.scrollIntoView();
     this.cid = this.$route.params.id;
-    request({
-      url: "/api/post?cid=" + this.$route.params.id
-    }).then(e => {
-      this.post = e.data;
-      this.csrfToken = e.data.csrfToken;
-      
-    });
+    this.getPost();
+  },
+  watch: {
+    $route() {
+      this.cid = this.$route.params.id;
+    },
+    cid() {
+      this.getPost();
+    }
   }
 };
 </script>

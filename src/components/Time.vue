@@ -1,21 +1,25 @@
 <template>
-  <div class="jinsom-post-list clear" page="2" type="all">
-    <li id="jinsom-post-2247 words" v-for="item in times">
-      <div class="header">
-        <span class="type" title="图集">
-          <i :class="item.type=='image'?'jinsom-icon jinsom-photo':'jinsom-icon jinsom-words'"></i>
-        </span>
-        <span class="time">{{item.year+"-"+item.month+"-"+item.day}}</span>
-      </div>
-      <div class="content" v-html="item.text"></div>
-
-      <div class="footer">
-        <div class="comment" onclick="jinsom_open_right_sidebar(2247)">
-          <i class="jinsom-icon jinsom-comment"></i>
-          <span>2</span>
+  <div>
+    <div class="jinsom-post-list clear" page="2" type="all">
+      <li id="jinsom-post-2247 words" v-for="item in times">
+        <div class="header">
+          <span class="type" title="图集">
+            <i :class="item.type=='image'?'jinsom-icon jinsom-photo':'jinsom-icon jinsom-words'"></i>
+          </span>
+          <span class="time">{{item.year+"-"+item.month+"-"+item.day}}</span>
         </div>
-      </div>
-    </li>
+        <div class="content" v-html="item.text"></div>
+
+        <div class="footer">
+          <div class="comment" onclick="jinsom_open_right_sidebar(2247)">
+            <i class="jinsom-icon jinsom-comment"></i>
+            <span>2</span>
+          </div>
+        </div>
+      </li>
+      
+    </div>
+    <Load v-if="!getComplete"></Load>
   </div>
 </template>
 
@@ -23,6 +27,7 @@
 import { request } from "../network/request";
 import baguetteBox from "../assets/js/baguetteBox.min.js";
 import common from "../assets/js/common";
+import Load from "../components/common/Load";
 
 export default {
   name: "Time",
@@ -30,19 +35,26 @@ export default {
     return {
       times: [],
       page: 1,
-      loadend: false
+      loadend: false,
+      getComplete: false
     };
+  },
+  components: {
+    Load
   },
   methods: {
     getTimes() {
+      this.getComplete = false;
       if (!this.loadend) {
+        this.loadend = true;
         request({
           url: "/api/posts?stime=true&showContent=true&page=" + this.page
         }).then(e => {
           const temp = e.data.dataSet;
-          if(temp.length < 1){
-            this.loadend = true;
-            return;
+
+          this.getComplete = true;
+          if (e.data.dataSet.length > 0) {
+            this.loadend = false;
           }
           for (var i = 0; i < temp.length; i++) {
             const imgarr = temp[i].text.match(/<img[^>]+>/g); //检测出内容所含有的所有图片
@@ -78,11 +90,14 @@ export default {
             temp[i].text += gallery;
           }
           this.times = this.times.concat(temp);
+
           setTimeout(function() {
             baguetteBox.run(".content");
           }, 1000);
         });
         this.page++;
+      } else {
+        this.getComplete = true;
       }
     }
   },
@@ -104,5 +119,4 @@ export default {
 .jinsom-post-list {
   margin-bottom: 80px;
 }
-
 </style>

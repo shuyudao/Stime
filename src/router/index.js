@@ -10,11 +10,22 @@ const Archives = () => import("../components/Archives")
 Vue.use(VueRouter)
 const router = new VueRouter({
     routes:[
-        {path:'/',component:ArticleList},
-        {path:"/archives/:id",component:Article},
-        {path:"/time",component:Time},
-        {path:"/record",component:Archives},
-        {path:"/index.php/archives/:id",component:Article}
+        {path:'/',
+            component:ArticleList,
+            meta: { 
+                keepAlive: true // 需要缓存 
+            }
+        },
+        {path:"/index.php/archives/:id",component:Article},
+        {path:"/index.php/pages/:id",component:Article},
+        {path:"/index.php/time",component:Time},
+        {path:"/index.php/record",
+            component:Archives,
+            meta: { 
+                keepAlive: true 
+            }
+        },
+        {path:"/index.php/archives/:id",component:Article},
     ],
     mode:'history'
 })
