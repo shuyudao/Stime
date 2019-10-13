@@ -6,7 +6,7 @@
       <div id="content" class="post-body" v-html="post.text"></div>
     </div>
     <h2 v-if="post.title==null" style="text-align:center">加载内容...</h2>
-    <Comment :csrfToken="csrfToken"></Comment>
+    <Comment :csrfToken="csrfToken" v-if="post.allowComment=='1'"></Comment>
   </div>
 </template>
 
