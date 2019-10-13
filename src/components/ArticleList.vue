@@ -42,8 +42,9 @@ export default {
             this.$router.push("/index.php/archives/"+cid)
         },
         getArticles(){
-            this.getComplete = false;
+
             if(!this.loadend){
+                this.getComplete = false;
                 this.loadend = true;
                 request({
                     url:"/api/posts?showDesc=true&page="+this.page
@@ -56,17 +57,16 @@ export default {
                     }
                 })
                 this.page++;
-            }else{
-                this.getComplete = true;
             }
             
         }
     },
-    mounted() {
+    activated() {
         common.scroll(() => {
-        this.getArticles();
-    });
-  }
+            this.getArticles();
+        });
+        
+    }
 }
 </script>
 

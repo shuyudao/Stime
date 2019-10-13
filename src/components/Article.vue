@@ -1,7 +1,7 @@
 <template>
   <div id="article">
     <div v-if="post.title!=null">
-      <h2>{{post.title}}</h2>
+      <h2 v-if="post.title = post.title.indexOf('stime')==0?'时间段详情':post.title">{{post.title}}</h2>
       <p class="post-date">{{post.year+"-"+post.month+"-"+post.day}}</p>
       <div id="content" class="post-body" v-html="post.text"></div>
     </div>

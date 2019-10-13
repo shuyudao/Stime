@@ -11,15 +11,15 @@
         <div class="content" v-html="item.text"></div>
 
         <div class="footer">
-          <div class="comment" onclick="jinsom_open_right_sidebar(2247)">
+          <div class="comment" @click="comments(item.cid)">
             <i class="jinsom-icon jinsom-comment"></i>
-            <span>2</span>
+            <span>{{item.commentsNum}}</span>
           </div>
         </div>
       </li>
       
     </div>
-    <Load v-if="!getComplete"></Load>
+    <Load  style="margin-bottom:60px;position: relative;top: -30px;" v-if="!getComplete"></Load>
   </div>
 </template>
 
@@ -28,6 +28,7 @@ import { request } from "../network/request";
 import baguetteBox from "../assets/js/baguetteBox.min.js";
 import common from "../assets/js/common";
 import Load from "../components/common/Load";
+import Comment from "./common/Comment"
 
 export default {
   name: "Time",
@@ -36,16 +37,19 @@ export default {
       times: [],
       page: 1,
       loadend: false,
-      getComplete: false
+      getComplete: false,
+      csrfToken:""
     };
   },
   components: {
-    Load
+    Load,
+    Comment
   },
   methods: {
     getTimes() {
-      this.getComplete = false;
+      
       if (!this.loadend) {
+        this.getComplete = false;
         this.loadend = true;
         request({
           url: "/api/posts?stime=true&showContent=true&page=" + this.page
@@ -96,15 +100,16 @@ export default {
           }, 1000);
         });
         this.page++;
-      } else {
-        this.getComplete = true;
       }
+    },
+    comments(cid){
+      this.$router.push("./archives/"+cid);
     }
   },
   created() {
     this.getTimes();
   },
-  mounted() {
+  activated() {
     common.scroll(() => {
       this.getTimes();
     });
@@ -119,4 +124,6 @@ export default {
 .jinsom-post-list {
   margin-bottom: 80px;
 }
+
+
 </style>

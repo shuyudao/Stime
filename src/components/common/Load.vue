@@ -19,7 +19,7 @@ export default {
 
 <style scoped>
 .wrapp{
-  height: 100px;
+  height: 20px!important;
 }
 h1.loadingtext {
     text-align: center;

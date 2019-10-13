@@ -28,7 +28,7 @@
             <p>{{commentsList.text}}</p>
 
             <div class="reply">
-            <a rel="nofollow" :href="'#comments?id='+commentsList.coid" class="comment-reply-link" @click="scr">回复</a>
+            <a rel="nofollow" :href="'#comments?pid='+commentsList.coid" class="comment-reply-link" @click="scr">回复</a>
             </div>
         </div>
         <div class="comment-child"  v-if="commentsList.children!=undefined&&commentsList.children.length>0">

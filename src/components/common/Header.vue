@@ -6,8 +6,8 @@
         <h2 id="title">术与道</h2>
         <p id="des"> 朗月清风，浓烟暗雨，天教憔悴度芳姿.</p>
         <div id="header-nav">
-            <div class="nav-item"><router-link to="/">首页</router-link></div>
-            <div class="nav-item"><router-link to="/index.php/time">时间的垃圾桶</router-link></div>
+            <div class="nav-item"><router-link to="/index.php">首页</router-link></div>
+            <div class="nav-item"><router-link to="/index.php/time">时间</router-link></div>
             <div class="nav-item"><router-link to="/index.php/record">归档</router-link></div>
             <div class="nav-item" v-for="item in pages"><a @click="openPage(item.cid)">{{item.title}}</a></div>
         </div>

@@ -12,13 +12,19 @@ const router = new VueRouter({
     routes:[
         {path:'/',
             component:ArticleList,
+            redirect:"/index.php"
+        },
+        {path:'/index.php',
+            component:ArticleList,
             meta: { 
                 keepAlive: true // 需要缓存 
             }
         },
         {path:"/index.php/archives/:id",component:Article},
         {path:"/index.php/pages/:id",component:Article},
-        {path:"/index.php/time",component:Time},
+        {path:"/index.php/time",component:Time,meta: { 
+            keepAlive: true // 需要缓存 
+        }},
         {path:"/index.php/record",
             component:Archives,
             meta: { 

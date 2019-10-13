@@ -78,9 +78,9 @@ export default {
           return false;
         }
 
-        const start = window.location.href.indexOf("=");
+        const start = window.location.href.indexOf("pid=");
         if (start > -1) {
-          this.comment.parent = window.location.href.substr(start + 1, 10);
+          this.comment.parent = window.location.href.substr(start + 4, 10);
         }
 
         request({
@@ -117,7 +117,7 @@ export default {
         this.getComplete = false;
         request({
           url:
-            "/api/comments?cid=" + this.$route.params.id + "&page=" + this.page
+            "/api/comments?cid=" + this.comment.cid + "&page=" + this.page
         }).then(e => {
           this.comments = this.comments.concat(e.data.dataSet);
           if (e.data.dataSet.length > 0) {
@@ -126,8 +126,6 @@ export default {
           this.getComplete = true;
         });
         this.page++;
-      } else {
-        this.getComplete = true;
       }
     }
   },
@@ -152,4 +150,43 @@ export default {
 </script>
 
 <style scoped>
+#comments{
+  margin-top: 80px;
+}
+
+.comment-input{
+  display: block;
+  height: 32px;
+  margin-top: 10px;
+  width: 280px;
+  outline: none;
+  padding-left: 6px;
+}
+#comment-content{
+  width: 480px!important;
+  height: 140px!important;
+  resize: none;
+  margin-top: 20px;
+  box-sizing: border-box;
+  padding: 10px;
+  outline: none;
+  background: #FCFCFC;
+}
+#pushCom{
+  width: 100px;
+  font-size: 14px;
+  height: 32px;
+  background: #333333;
+  color: #FFF;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  top: -11px;
+  left: 20px;
+}
+
+#commentsList{
+    margin-top: 10px;
+}
+
 </style>
