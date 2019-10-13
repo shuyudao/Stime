@@ -17,6 +17,7 @@
                 target="_blank"
                 >{{commentsList.author}}</a>
             </cite>
+            <span v-if="commentsList.authorId=='1'" class="admin">博主</span>
             <span class="says">说道：</span>
             </div>
 
@@ -90,7 +91,13 @@ export default {
 </script>
 
 <style scoped>
-
+.admin{
+  color: #fff!important;
+  padding:0 4px 0 4px;
+  background: #ffa500;
+  border-radius: 4px;
+  font-size: 12px;
+}
 /* Comments */
 #commentsList li {
   list-style: none;

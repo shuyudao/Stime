@@ -29,7 +29,7 @@ export default {
   data() {
     return {
       times: [],
-      page: 0,
+      page: 1,
       loadend: false
     };
   },

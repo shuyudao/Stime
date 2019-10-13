@@ -1,8 +1,11 @@
 <template>
-  <div id="article" v-cloak>
-    <h2>{{post.title}}</h2>
-    <p class="post-date">{{post.year+"-"+post.month+"-"+post.day}}</p>
-    <div id="content" class="post-body" v-html="post.text"></div>
+  <div id="article">
+    <div v-if="post.title!=null">
+      <h2>{{post.title}}</h2>
+      <p class="post-date">{{post.year+"-"+post.month+"-"+post.day}}</p>
+      <div id="content" class="post-body" v-html="post.text"></div>
+    </div>
+    <h2 v-if="post.title==null" style="text-align:center">加载内容...</h2>
     <Comment :csrfToken="csrfToken"></Comment>
   </div>
 </template>

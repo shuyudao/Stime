@@ -6,9 +6,9 @@
         <span style="color:red;font-size:16px;padding-left:10px;">{{alert}}</span>
       </h2>
       <div>
-        <input type="text" class="comment-input" placeholder="昵称*" v-model="comment.author" />
-        <input type="email" class="comment-input" placeholder="邮箱*" v-model="comment.mail" />
-        <input type="text" class="comment-input" placeholder="网址" v-model="comment.url" />
+        <input v-if="!islogin" type="text" class="comment-input" placeholder="昵称*" v-model="comment.author" />
+        <input v-if="!islogin" type="email" class="comment-input" placeholder="邮箱*" v-model="comment.mail" />
+        <input v-if="!islogin" type="text" class="comment-input" placeholder="网址" v-model="comment.url" />
         <textarea
           name="content"
           id="comment-content"
@@ -50,7 +50,8 @@ export default {
         token: ""
       },
       loadend: false,
-      getComplete: false
+      getComplete: false,
+      islogin:false
     };
   },
   props:['csrfToken'], //post's token
@@ -66,13 +67,13 @@ export default {
       );
 
       if (
-        this.comment.mail != "" &&
+        (this.comment.mail != "" &&
         this.comment.author != "" &&
-        this.comment.text != ""
+        this.comment.text != "")||this.islogin
       ) {
         this.alert = "";
         const mail = this.comment.mail;
-        if (!reg.test(mail)) {
+        if (!this.islogin&&!reg.test(mail)) {
           this.alert = "你输入的不是邮箱";
           return false;
         }
@@ -85,10 +86,12 @@ export default {
         request({
           method: "post",
           url: "/api/comment",
-          data: this.comment
+          data: this.comment,
+          withCredentials:true
         })
           .then(e => {
             this.page = 1;
+            this.comments = [];
             this.getComments();
             this.comment.parent = null;
             this.comment.text = "";
@@ -130,8 +133,15 @@ export default {
   },
   created() {
     this.comment.cid = this.$route.params.id;
-
     this.getComments();
+    request({
+      url:"/api/comments?islogin=true",
+      withCredentials:true
+    }).then(e => {
+      if(e.key!=null){
+        this.islogin = true;
+      }
+    })
   },
   mounted() {
     common.scroll(() =>{
