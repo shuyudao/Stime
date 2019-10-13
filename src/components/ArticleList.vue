@@ -1,5 +1,6 @@
 <template>
     <div id="article-list">
+        
         <div class="article-item" @click="readPost(item.cid)" v-for="item in post">
             <h3 class="article-title"><span class="in-text">{{item.title}}</span></h3>
             <div class="article-desc">
@@ -11,32 +12,62 @@
                 <p class="comments"><i class="iconfont icon-pinglun"/>{{item.commentsNum}}</p>
             </div>
         </div>
-
+        <Load v-if="!getComplete"></Load>
     </div>
 </template>
 
 <script>
 import {request} from "../network/request"
+import common from "../assets/js/common";
+import Load from "../components/common/Load"
 
 export default {
     name:"ArticleList",
     data(){
         return{
-            post:[]
+            post:[],
+            page:1,
+            loadend:false, //加载全部完成
+            getComplete:false
         }
     },
+    components:{
+        Load
+    },
     created(){
-        request({
-            url:"/api/posts?showDesc=true"
-        }).then(e => {
-            this.post = e.data.dataSet;
-        })
+        this.getArticles()
     },
     methods:{
         readPost(cid){
             this.$router.push("/archives/"+cid)
+        },
+        getArticles(){
+            this.getComplete = false;
+            if(!this.loadend){
+                this.loadend = true;
+                request({
+                    url:"/api/posts?showDesc=true&page="+this.page
+                }).then(e => {
+                    this.post = this.post.concat(e.data.dataSet);
+                    this.getComplete = true;
+                    console.log(11);
+                    
+                    if(e.data.dataSet.length > 0 ){
+                        this.loadend = false;
+                    }
+                })
+                this.page++;
+            }else{
+                this.getComplete = true;
+            }
+            
         }
-    }
+    },
+    mounted() {
+        common.scroll(() => {
+        this.getArticles();
+    });
+  }
 }
 </script>
 

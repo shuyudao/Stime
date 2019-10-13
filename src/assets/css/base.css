@@ -17,6 +17,9 @@ body{
 html,body{
   height: 100%;
 }
+[v-cloak] {
+  display: none;
+}
 #app{
   min-height: 100%;
   position: relative;

@@ -13,7 +13,8 @@ const router = new VueRouter({
         {path:'/',component:ArticleList},
         {path:"/archives/:id",component:Article},
         {path:"/time",component:Time},
-        {path:"/record",component:Archives}
+        {path:"/record",component:Archives},
+        {path:"/index.php/archives/:id",component:Article}
     ],
     mode:'history'
 })

@@ -493,3 +493,7 @@
   .music xg-cover.xgplayer-cover {
     display: none;
   }
+  .content a{
+    color: #444!important;
+    text-decoration: underline!important;
+  }

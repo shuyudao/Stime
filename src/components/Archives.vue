@@ -2,7 +2,7 @@
     <div id="Archives">
         <h2>文章归档</h2>
         <ul>
-            <li v-for="item in posts"><a :href="'/archives/'+item.cid"><span>{{item.year+"-"+item.month+"-"+item.day}}</span> <span class="title">{{item.title}}</span></a></li>
+            <li v-for="item in posts"><a @click="openPOst(item.cid)"><span>{{item.year+"-"+item.month+"-"+item.day}}</span> <span class="title">{{item.title}}</span></a></li>
         </ul>
     </div>
 </template>
@@ -22,9 +22,12 @@ export default {
             url:"/api/archives"
         }).then(e => {
             this.posts = e.data.dataSet;
-            console.log(this.posts);
-            
         })
+    },
+    methods:{
+        openPOst(cid){
+             this.$router.push("/archives/"+cid);
+        }
     }
 }
 </script>
@@ -57,6 +60,7 @@ a{
     text-decoration: none;
 }
 .title{
-    text-decoration: underline
+    text-decoration: underline;
+    cursor: pointer;
 }
 </style>
