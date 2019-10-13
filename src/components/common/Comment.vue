@@ -13,7 +13,7 @@
           name="content"
           id="comment-content"
           v-model="comment.text"
-          placeholder="不说几句就不够意思了:)"
+          :placeholder="placetxt"
         ></textarea>
         <button id="pushCom" @click="pushCom">提交评论</button>
       </div>
@@ -40,6 +40,7 @@ export default {
       comments: [],
       page: 1,
       alert: "",
+      placetxt:"不说几句就不够意思了:)",
       comment: {
         cid: null,
         parent: null,
@@ -91,6 +92,7 @@ export default {
         })
           .then(e => {
             this.page = 1;
+            this.loadend = false;
             this.comments = [];
             this.getComments();
             this.comment.parent = null;
@@ -102,6 +104,7 @@ export default {
               this.alert = e.message;
             } else {
               this.alert = "评论成功";
+              this.placetxt = "不说几句就不够意思了:)";
             }
           })
           .catch(e => {
@@ -145,6 +148,13 @@ export default {
     common.scroll(() =>{
       this.getComments();
     });
+  },
+  watch: {
+    $route() {
+      if(window.location.href.indexOf("#comments")){
+        this.placetxt = "回复它："
+      }
+    }
   }
 };
 </script>
