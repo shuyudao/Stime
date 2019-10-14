@@ -66,9 +66,9 @@ export default {
 
             if (imgarr != null) {
               temp[i]["type"] = "image";
-              if (imgarr.length == 2 || imgarr.length == 4) {
+              if (imgarr.length%2==0) {
                 gallery = `<div class="gallery type-d clear">`;
-              } else if (imgarr.length == 1) {
+              } else if (imgarr.length%2!=0) {
                 gallery = `<div class="gallery type-e clear">`;
               }
               //遍历替换为空
