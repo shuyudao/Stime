@@ -30,7 +30,8 @@ export default {
         }
     },
     activated(){
-        document.title = "文章归档";
+        const tpc = document.title.split("-");
+        document.title = tpc[0]+"-文章归档";
     }
 }
 </script>

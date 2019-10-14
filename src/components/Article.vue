@@ -33,13 +33,15 @@ export default {
         url: "/api/post?cid=" + this.$route.params.id
       }).then(e => {
         this.post = e.data;
-        document.title = e.data.title;
+        const tpc = document.title.split("-");
+        document.title = tpc[0]+"-"+e.data.title;
         this.csrfToken = e.data.csrfToken;
         Prism.highlightAll();
       });
     }
   },
   created() {
+    
     header.scrollIntoView();
     this.cid = this.$route.params.id;
     this.getPost();

@@ -110,7 +110,8 @@ export default {
     this.getTimes();
   },
   activated() {
-    document.title = "时间";
+    const tpc = document.title.split("-");
+    document.title = tpc[0]+"-时间";
     common.scroll(() => {
       this.getTimes();
     });

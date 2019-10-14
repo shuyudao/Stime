@@ -28,13 +28,14 @@ export default {
             page:1,
             loadend:false, //加载全部完成
             getComplete:false,
-            dhasData:false
+            defaulttitle:""
         }
     },
     components:{
         Load
     },
     created(){
+        this.defaulttitle = document.title
         this.getArticles()
     },
     methods:{
@@ -62,7 +63,8 @@ export default {
         }
     },
     activated() {
-        document.title = "首页";
+        document.title = this.defaulttitle+"-首页";
+        
         common.scroll(() => {
             this.getArticles();
         });
