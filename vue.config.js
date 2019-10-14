@@ -1,3 +1,3 @@
 module.exports = {
-    // publicPath:"/usr/themes/stime/",
-  }
+  publicPath:"/usr/themes/stime/",
+}

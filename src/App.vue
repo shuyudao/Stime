@@ -1,11 +1,11 @@
 <template>
-  <div id="app">
-    <HomeHeader></HomeHeader>
+  <div id="app" v-if="loadend">
+    <HomeHeader :themedata="data"></HomeHeader>
     <keep-alive>
         <router-view v-if="$route.meta.keepAlive"></router-view>
     </keep-alive>
     <router-view v-if="!$route.meta.keepAlive"></router-view> 
-    <HomeFooter></HomeFooter>
+    <HomeFooter :themedata="data"></HomeFooter>
   </div>
 </template>
 
@@ -14,6 +14,7 @@ import HomeHeader from './components/common/Header'
 import HomeFooter from './components/common/Footer'
 
 import router from './router/index';
+import { request } from './network/request';
 
 export default {
   name: 'app',
@@ -21,7 +22,21 @@ export default {
     HomeHeader,
     HomeFooter
   },
-  router
+  data(){
+    return{
+      data:{},
+      loadend:false
+    }
+  },
+  router,
+  created(){
+    request({
+      url:"/api/themeset"
+    }).then(e => {
+      this.data = e.data.dataSet
+      this.loadend = true;
+    })
+  }
 }
 </script>
 

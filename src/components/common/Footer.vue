@@ -1,14 +1,15 @@
 <template>
     <div id="footer">
         <div id="footer-main">
-            <p>© 2018 - 2019 ❤ STime & Typecho</p>
+            <p v-html="themedata.footer"></p>
         </div>
     </div>
 </template>
 
 <script>
 export default {
-    
+    name:"Footer",
+    props:['themedata']
 }
 </script>
 

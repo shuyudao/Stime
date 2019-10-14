@@ -1,10 +1,10 @@
 <template>
     <div id="header">
         <div id="headimg">
-            <img class="" src="http://q.qlogo.cn/headimg_dl?dst_uin=2423458891&spec=640&img_type=jpg" alt="">
+            <img class="" :src="themedata.logoUrl" alt="">
         </div>
-        <h2 id="title">术与道</h2>
-        <p id="des"> 朗月清风，浓烟暗雨，天教憔悴度芳姿.</p>
+        <h2 id="title">{{themedata.name}}</h2>
+        <p id="des"> {{themedata.notice}}</p>
         <div id="header-nav">
             <div class="nav-item"><router-link to="/index.php">首页</router-link></div>
             <div class="nav-item"><router-link to="/index.php/time">时间</router-link></div>
@@ -19,22 +19,23 @@ import { request } from "../../network/request"
 
 export default {
     name:"Header",
+    props:['themedata'],
     data(){
         return{
-            pages:[]
+            pages:[],
+            loadend:false
         }
     },
     created(){
         request({
             url:"/api/pages"
         }).then(e => {
-            
             this.pages = e.data.dataSet;
+            this.loadend = true
         })
     },
     methods:{
         openPage(cid){
-            this.$router.push('/')
             this.$router.push("/index.php/pages/"+cid);
         }
     }

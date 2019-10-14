@@ -62,6 +62,7 @@ export default {
         }
     },
     activated() {
+        document.title = "首页";
         common.scroll(() => {
             this.getArticles();
         });

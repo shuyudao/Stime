@@ -110,6 +110,7 @@ export default {
     this.getTimes();
   },
   activated() {
+    document.title = "时间";
     common.scroll(() => {
       this.getTimes();
     });

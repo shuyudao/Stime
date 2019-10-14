@@ -28,6 +28,9 @@ export default {
         openPOst(cid){
              this.$router.push("./archives/"+cid);
         }
+    },
+    activated(){
+        document.title = "文章归档";
     }
 }
 </script>
