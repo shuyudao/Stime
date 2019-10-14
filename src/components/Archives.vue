@@ -1,6 +1,7 @@
 <template>
     <div id="Archives">
         <h2>文章归档</h2>
+        <Load v-if="!complete"></Load>
         <ul>
             <li v-for="item in posts"><a @click="openPOst(item.cid)"><span>{{item.year+"-"+item.month+"-"+item.day}}</span> <span class="title">{{item.title}}</span></a></li>
         </ul>
@@ -9,19 +10,25 @@
 
 <script>
 import {request} from '../network/request';
+import Load from "./common/Load"
 
 export default {
     name:"Archives",
     data(){
         return{
-            posts:[]
+            posts:[],
+            complete:false
         }
+    },
+    components:{
+        Load
     },
     created(){
         request({
             url:"/api/archives"
         }).then(e => {
             this.posts = e.data.dataSet;
+            this.complete = true;
         })
     },
     methods:{
