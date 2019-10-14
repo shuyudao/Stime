@@ -221,5 +221,8 @@ export default {
     top: 5px;
     left: 0px;
   }
+  #commentsList{
+    word-wrap: break-all;
+  }
 }
 </style>
