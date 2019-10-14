@@ -37,7 +37,7 @@ export default {
 
 <style scoped>
 #Archives{
-    width: 740px;
+    width: 100%;
     margin: 60px auto;
 }
 h2{

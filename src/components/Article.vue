@@ -7,14 +7,13 @@
     </div>
     <h2 v-if="post.title==null" style="text-align:center">加载内容...</h2>
     <Comment :csrfToken="csrfToken" v-if="post.allowComment=='1'"></Comment>
-
   </div>
 </template>
 
 <script>
 import { request } from "../network/request";
 import Comment from "../components/common/Comment";
-
+import Prism from 'prismjs'
 
 export default {
   name: "Article",
@@ -36,6 +35,7 @@ export default {
         this.post = e.data;
         document.title = e.data.title;
         this.csrfToken = e.data.csrfToken;
+        Prism.highlightAll();
       });
     }
   },
@@ -57,6 +57,4 @@ export default {
 
 <style scoped>
 @import url("../assets/css/post.css");
-@import url("https://cdn.jsdelivr.net/npm/prismjs@1.17.1/themes/prism-okaidia.css");
-@import url("https://cdn.jsdelivr.net/npm/prismjs@1.15.0/plugins/line-numbers/prism-line-numbers.css");
 </style>

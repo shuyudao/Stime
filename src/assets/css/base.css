@@ -1,7 +1,5 @@
 @import "./normalize.css";
 
-
-
 *{
     margin: 0px;
     padding: 0px;
@@ -18,7 +16,9 @@ html,body{
   display: none;
 }
 #app{
+  width: 860px;
   min-height: 100%;
+  margin: 0 auto;
   position: relative;
   padding: 1px;
   box-sizing: border-box;
@@ -44,4 +44,21 @@ hr{
 }
 a{
   text-decoration: none;
+}
+
+@media screen and (max-width: 860px) {
+  #app {
+    width: 80%;
+    margin: 0 auto;
+  }
+  #article-list{
+    width: 100%!important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #app {
+    width: 92%;
+    margin: 0 auto;
+  }
 }

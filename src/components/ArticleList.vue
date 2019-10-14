@@ -101,6 +101,10 @@ export default {
     line-height: 28px;
     display: -webkit-box;
 }
+.article-desc p{
+    width: 100%;
+    word-break: break-all;
+}
 .t-tag{
     color: #65737E
 }
@@ -113,4 +117,6 @@ export default {
     display: inline-block;
     padding-right: 20px;
 }
+
+
 </style>

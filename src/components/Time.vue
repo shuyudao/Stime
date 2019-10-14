@@ -1,10 +1,10 @@
 <template>
   <div>
-    <div class="jinsom-post-list clear" page="2" type="all">
-      <li id="jinsom-post-2247 words" v-for="item in times">
+    <div class="stime-post-list clear" page="2" type="all">
+      <li v-for="item in times">
         <div class="header">
           <span class="type" title="图集">
-            <i :class="item.type=='image'?'jinsom-icon jinsom-photo':'jinsom-icon jinsom-words'"></i>
+            <i :class="item.type=='image'?'stime-icon stime-photo':'stime-icon stime-words'"></i>
           </span>
           <span class="time">{{item.year+"-"+item.month+"-"+item.day}}</span>
         </div>
@@ -12,7 +12,7 @@
 
         <div class="footer">
           <div class="comment" @click="comments(item.cid)">
-            <i class="jinsom-icon jinsom-comment"></i>
+            <i class="stime-icon stime-comment"></i>
             <span>{{item.commentsNum}}</span>
           </div>
         </div>
@@ -122,9 +122,11 @@ export default {
 @import url("../assets/css/time.css");
 @import url("../assets/css/baguetteBox.min.css");
 
-.jinsom-post-list {
+.stime-post-list {
+  width: 100%;
   margin-bottom: 80px;
 }
+
 
 
 </style>

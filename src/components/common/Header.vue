@@ -89,4 +89,9 @@ export default {
 #header-nav a{
     color: #444;
 }
+@media screen and (max-width: 520px) {
+    #des{
+        font-size: 14px;
+    }
+}
 </style>

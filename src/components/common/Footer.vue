@@ -18,7 +18,7 @@ export default {
 #footer{
     width: 100%;
     height: 60px;
-    background: #f5f5f5;
+    background: #fff;
     color: #666;
     padding: 0px;
     box-sizing: border-box;
@@ -28,12 +28,17 @@ export default {
 }
 #footer-main{
     font-size: 14px;
-    width: 740px;
+    width: 100%;
     height: 100%;
     margin: 0 auto;
     text-align: center;
 }
 #footer-main p{
     line-height: 60px;
+}
+@media screen and (max-width: 520px) {
+    #footer-main p{
+        font-size: 12px;
+    }
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="comvue">
     <div id="comments" ref="comments">
       <h2>
         # 评论
@@ -163,7 +163,9 @@ export default {
 #comments{
   margin-top: 80px;
 }
-
+#comvue{
+  width: 100%;
+}
 .comment-input{
   display: block;
   height: 32px;
@@ -173,8 +175,8 @@ export default {
   padding-left: 6px;
 }
 #comment-content{
-  width: 480px!important;
-  height: 140px!important;
+  width: 480px;
+  height: 140px;
   resize: none;
   margin-top: 20px;
   box-sizing: border-box;
@@ -198,5 +200,26 @@ export default {
 #commentsList{
     margin-top: 10px;
 }
+@media screen and (max-width: 520px) {
+  #comment-content {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
 
+  }
+  input{
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .comment-input{
+    width: 100%;
+  }
+  #comments>div{
+    padding-top: 10px;
+  }
+  #pushCom{
+    top: 5px;
+    left: 0px;
+  }
+}
 </style>

@@ -4,7 +4,7 @@
     padding-top: 24px;
 }
 #article{
-    width: 860px;
+    width: 100%;
     margin: 20px auto;
     font-family: 'Noto Serif SC', serif;
     margin-bottom: 80px;
@@ -606,7 +606,7 @@ img.small {
 
   .post-body {
     width: 100%;
-    padding: 1em;
+    padding: .5em;
     box-sizing: border-box;
   }
 
@@ -633,7 +633,9 @@ img.small {
     display: none;
     height: 380px;
   }
-  
+  #content{
+    font-size: 16px;
+  }
 }
 
 

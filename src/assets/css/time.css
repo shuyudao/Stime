@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "jinsom-icon";
+    font-family: "stime-icon";
     src: url("//at.alicdn.com/t/font_1009731_t1aii462yjj.eot?t=1557733503335"); /* IE9 */
     src: url("//at.alicdn.com/t/font_1009731_t1aii462yjj.eot?t=1557733503335#iefix")
         format("embedded-opentype"),
@@ -15,60 +15,60 @@
         format("svg"); /* iOS 4.1- */
   }
   
-  .jinsom-icon {
-    font-family: "jinsom-icon" !important;
+  .stime-icon {
+    font-family: "stime-icon" !important;
     font-size: 16px;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
   
-  .jinsom-like:before {
+  .stime-like:before {
     content: "\e668";
   }
   
-  .jinsom-top:before {
+  .stime-top:before {
     content: "\e786";
   }
   
-  .jinsom-no-like:before {
+  .stime-no-like:before {
     content: "\e635";
   }
   
-  .jinsom-rand:before {
+  .stime-rand:before {
     content: "\e65d";
   }
   
-  .jinsom-photo:before {
+  .stime-photo:before {
     content: "\e605";
   }
   
-  .jinsom-music:before {
+  .stime-music:before {
     content: "\e760";
   }
   
-  .jinsom-comment:before {
+  .stime-comment:before {
     content: "\e689";
   }
   
-  .jinsom-right-top:before {
+  .stime-right-top:before {
     content: "\e670";
   }
   
-  .jinsom-words:before {
+  .stime-words:before {
     content: "\e6b7";
   }
   
-  .jinsom-video:before {
+  .stime-video:before {
     content: "\e66b";
   }
   
-  .jinsom-right:before {
+  .stime-right:before {
     content: "\e600";
   }
   
   /*头部*/
-  .jinsom-header {
+  .stime-header {
     background: #ffffff;
     padding: 20px 10%;
     position: fixed;
@@ -77,7 +77,7 @@
     box-sizing: border-box;
     height: 60px;
   }
-  .jinsom-header .logo {
+  .stime-header .logo {
     position: absolute;
     left: 50%;
     margin-left: -50px;
@@ -85,7 +85,7 @@
     cursor: pointer;
     height: 100px;
   }
-  .jinsom-header .logo img {
+  .stime-header .logo img {
     width: 100px;
     height: 100px;
     border-radius: 100%;
@@ -94,15 +94,15 @@
     box-sizing: border-box;
     transition: 0.4s all ease-in-out;
   }
-  .jinsom-header .logo img:hover {
+  .stime-header .logo img:hover {
     transform: rotate(360deg);
   }
-  .jinsom-header .left {
+  .stime-header .left {
     width: 50%;
     float: left;
     display: flex;
   }
-  .jinsom-header .right {
+  .stime-header .right {
     width: 50%;
     float: right;
     display: flex;
@@ -124,25 +124,25 @@
   input {
     -webkit-appearance: none;
   }
-  .jinsom-main {
+  .stime-main {
     position: relative;
   }
   
   /*内容区*/
-  .jinsom-content {
+  .stime-content {
     padding-top: 120px;
     margin-bottom: 200px;
     background-color: #e2e2e2;
     padding-bottom: 200px;
   }
-  .jinsom-post-list {
+  .stime-post-list {
     width: 80%;
     margin: auto;
     position: relative;
     max-width: 1200px;
     margin-bottom: 60px;
   }
-  .jinsom-post-list:before {
+  .stime-post-list:before {
     background-color: #aaa;
     content: "";
     left: 50%;
@@ -153,43 +153,43 @@
     height: 100%;
     margin-left: -1px;
   }
-  .jinsom-post-list li {
+  .stime-post-list li {
     width: 50%;
     padding-top: 60px;
     position: relative;
     animation-duration: 1s;
     animation-fill-mode: both;
-    animation-name: jinsom-fadeInUp;
+    animation-name: stime-fadeInUp;
   }
-  .jinsom-post-list li:nth-child(odd) {
+  .stime-post-list li:nth-child(odd) {
     float: left;
     clear: left;
     padding-right: 20px;
     box-sizing: border-box;
   }
-  .jinsom-post-list li:nth-child(even) {
+  .stime-post-list li:nth-child(even) {
     float: right;
     clear: right;
     padding-left: 20px;
     box-sizing: border-box;
     margin-top: 60px;
   }
-  .jinsom-post-list li:nth-child(1) {
+  .stime-post-list li:nth-child(1) {
     animation-delay: 0.1s;
   }
-  .jinsom-post-list li:nth-child(2) {
+  .stime-post-list li:nth-child(2) {
     animation-delay: 0.2s;
   }
-  .jinsom-post-list li:nth-child(3) {
+  .stime-post-list li:nth-child(3) {
     animation-delay: 0.3s;
   }
-  .jinsom-post-list li:nth-child(4) {
+  .stime-post-list li:nth-child(4) {
     animation-delay: 0.4s;
   }
-  .jinsom-post-list li:nth-child(5) {
+  .stime-post-list li:nth-child(5) {
     animation-delay: 0.5s;
   }
-  .jinsom-post-list li .content {
+  .stime-post-list li .content {
     background-color: #fff;
     padding: 20px;
     border-radius: 3px;
@@ -198,32 +198,32 @@
     word-break: break-all;
     box-shadow: 0px 0px 4px rgba(166, 166, 166, 0.5);
   }
-  .jinsom-post-list li .content p {
+  .stime-post-list li .content p {
     line-height: 26px;
     font-size: 0.928571429rem;
     color: #444;
   }
-  .jinsom-post-list li .content h1 {
+  .stime-post-list li .content h1 {
     font-size: 16px;
     line-height: 30px;
   }
-  .jinsom-post-list li .header span:hover,
-  .jinsom-post-list li .content:hover,
-  .jinsom-post-list li .footer > div:hover {
+  .stime-post-list li .header span:hover,
+  .stime-post-list li .content:hover,
+  .stime-post-list li .footer > div:hover {
     transform: translateY(-4px);
   }
-  .jinsom-post-list li .header {
+  .stime-post-list li .header {
     margin-bottom: 10px;
     display: flex;
   }
-  .jinsom-post-list li:nth-child(odd) .header {
+  .stime-post-list li:nth-child(odd) .header {
     position: absolute;
     right: 20px;
   }
-  .jinsom-post-list li:nth-child(odd) .header span:last-child {
+  .stime-post-list li:nth-child(odd) .header span:last-child {
     margin-right: 0px;
   }
-  .jinsom-post-list li .header span {
+  .stime-post-list li .header span {
     padding: 8px 12px 9px;
     color: #666;
     background-color: #fff;
@@ -236,10 +236,10 @@
     box-shadow: 0px 0px 4px rgba(166, 166, 166, 0.5);
   }
   
-  .jinsom-post-list li:nth-child(odd) .content {
+  .stime-post-list li:nth-child(odd) .content {
     margin-top: 43px;
   }
-  .jinsom-post-list li .content:before {
+  .stime-post-list li .content:before {
     position: absolute;
     right: -28px;
     top: -12px;
@@ -250,10 +250,10 @@
     -webkit-border-radius: 8px;
     background: #666666;
   }
-  .jinsom-post-list li:nth-child(even) .content:before {
+  .stime-post-list li:nth-child(even) .content:before {
     left: -28px;
   }
-  .jinsom-more-post {
+  .stime-more-post {
     width: 40px;
     background-color: #fff;
     text-align: center;
@@ -268,10 +268,10 @@
     letter-spacing: 1px;
     position: relative;
   }
-  .jinsom-more-post.on {
+  .stime-more-post.on {
     animation: rotate 0.5s linear infinite;
   }
-  .jinsom-more-post:hover:before {
+  .stime-more-post:hover:before {
     content: "";
     height: 8px;
     width: 40px;
@@ -284,31 +284,31 @@
   }
   
   /*喜欢*/
-  .jinsom-post-list li .footer {
+  .stime-post-list li .footer {
     padding: 8px 5px;
     color: #999;
   }
-  .jinsom-post-list li:nth-child(even) .footer {
+  .stime-post-list li:nth-child(even) .footer {
     text-align: right;
   }
-  .jinsom-post-list li .footer i {
+  .stime-post-list li .footer i {
     font-size: 20px;
     margin-right: 5px;
   }
-  .jinsom-post-list li .footer > div {
+  .stime-post-list li .footer > div {
     display: inline-block;
     margin-right: 20px;
     transition: all 0.3s ease;
     cursor: pointer;
   }
-  .jinsom-post-list li:nth-child(even) .footer > div {
+  .stime-post-list li:nth-child(even) .footer > div {
     margin-right: 0;
     margin-left: 20px;
   }
-  .jinsom-like {
+  .stime-like {
     color: #e91e63;
   }
-  .jinsom-content .totop {
+  .stime-content .totop {
     width: 40px;
     height: 40px;
     position: absolute;
@@ -323,12 +323,12 @@
     line-height: 40px;
     z-index: 2;
   }
-  .jinsom-content .totop:hover {
+  .stime-content .totop:hover {
     color: #f00;
   }
   
   /*底部*/
-  .jinsom-footer {
+  .stime-footer {
     height: 200px;
     background-color: #3b3b45;
     position: fixed;
@@ -337,16 +337,16 @@
     z-index: -1;
     color: #fff;
   }
-  .jinsom-footer .logo {
+  .stime-footer .logo {
     text-align: center;
     font-size: 60px;
     line-height: 200px;
     transition: all 0.5s;
   }
-  .jinsom-footer .logo:hover {
+  .stime-footer .logo:hover {
     color: #f44336;
   }
-  .jinsom-footer .bottom {
+  .stime-footer .bottom {
     position: absolute;
     bottom: 10px;
     width: 100%;
@@ -361,7 +361,7 @@
   /*动画*/
   
   /*渐现*/
-  @keyframes jinsom-fadeInUp {
+  @keyframes stime-fadeInUp {
     0% {
       opacity: 0;
       transform: translateY(20px);
@@ -392,73 +392,73 @@
   }
   
   /*图集*/
-  .jinsom-photo {
+  .stime-photo {
     color: #4caf50;
   }
-  .jinsom-post-list li .content .gallery a {
+  .stime-post-list li .content .gallery a {
     display: inline-block;
     margin-top: 20px;
     border-radius: 2px;
     background-color: #f5f5f5;
   }
   
-  .jinsom-post-list li .content .gallery a img {
+  .stime-post-list li .content .gallery a img {
     max-width: 100%;
     border-radius: 2px;
   }
-  .jinsom-post-list li .content img {
+  .stime-post-list li .content img {
     max-width: 100%;
   }
-  .jinsom-post-list li .content .gallery.type-a a:nth-child(3n),
-  .jinsom-post-list li .content .gallery.type-b a:nth-child(3n + 1),
-  .jinsom-post-list li .content .gallery.type-d a:nth-child(2n),
-  .jinsom-post-list li .content .gallery.type-e a:nth-child(2n + 1) {
+  .stime-post-list li .content .gallery.type-a a:nth-child(3n),
+  .stime-post-list li .content .gallery.type-b a:nth-child(3n + 1),
+  .stime-post-list li .content .gallery.type-d a:nth-child(2n),
+  .stime-post-list li .content .gallery.type-e a:nth-child(2n + 1) {
     margin-right: 0;
   }
   
   /*类型A & B*/
-  .jinsom-post-list li .content .gallery.type-a a,
-  .jinsom-post-list li .content .gallery.type-b a {
+  .stime-post-list li .content .gallery.type-a a,
+  .stime-post-list li .content .gallery.type-b a {
     float: left;
     width: 30.5555%;
     margin-right: 4.11%;
     overflow: hidden;
     height: 120px;
   }
-  .jinsom-post-list li .content .gallery.type-a a img,
-  .jinsom-post-list li .content .gallery.type-b a img {
+  .stime-post-list li .content .gallery.type-a a img,
+  .stime-post-list li .content .gallery.type-b a img {
     min-height: 120px;
   }
-  .jinsom-post-list li .content .gallery.type-b a:first-child,
-  .jinsom-post-list li .content .gallery.type-e a:first-child {
+  .stime-post-list li .content .gallery.type-b a:first-child,
+  .stime-post-list li .content .gallery.type-e a:first-child {
     width: 100%;
     height: auto;
   }
   
   /*类型D & E*/
-  .jinsom-post-list li .content .gallery.type-d a,
-  .jinsom-post-list li .content .gallery.type-e a {
+  .stime-post-list li .content .gallery.type-d a,
+  .stime-post-list li .content .gallery.type-e a {
     float: left;
     width: 47.911%;
     margin-right: 4.11%;
     overflow: hidden;
     height: 150px;
   }
-  .jinsom-post-list li .content .gallery.type-d a img,
-  .jinsom-post-list li .content .gallery.type-e a img {
+  .stime-post-list li .content .gallery.type-d a img,
+  .stime-post-list li .content .gallery.type-e a img {
     min-height: 150px;
   }
   
   /*视频*/
-  .jinsom-video {
+  .stime-video {
     color: #f44336;
   }
-  .jinsom-post-list li .content .video,
-  .jinsom-post-list li .content iframe,
-  .jinsom-post-list li .content .music {
+  .stime-post-list li .content .video,
+  .stime-post-list li .content iframe,
+  .stime-post-list li .content .music {
     margin-top: 20px;
   }
-  .jinsom-post-list li .content iframe {
+  .stime-post-list li .content iframe {
     max-width: 100%;
     height: 300px;
     width: 100%;
@@ -479,7 +479,7 @@
   }
   
   /*音乐*/
-  .jinsom-music {
+  .stime-music {
     color: #2196f3;
   }
   .xgplayer-music .xgplayer-poster,
@@ -496,4 +496,231 @@
   .content a{
     color: #444!important;
     text-decoration: underline!important;
+  }
+
+
+  /* 设备适配 */
+  /*移动端*/
+@media screen and (max-width: 600px) {
+
+  .stime-header .logo{
+      left: 0%;
+      margin-left: 0;
+  }
+  .stime-header .logo img:hover {
+      transform: rotate(0deg);
+  }
+  .stime-post-list {
+      margin-left: 5px;
+  }
+  .stime-post-list:before {
+      left: 0;
+      margin-left: 0px;
+  }
+  .stime-post-list li {
+      width: 100%;
+      padding-left: 20px;
+  }
+  .stime-post-list li:nth-child(odd) {
+      padding-right: 0;
+  }
+  .stime-post-list li .content:before {
+      left: -28px;
+  }
+  .stime-post-list li:nth-child(odd) .header {
+      left: 20px;
+  }
+  .stime-post-list li:nth-child(even) .content:before{
+      left: -28px;
+  }
+  .stime-post-list li .footer {
+      text-align: right;
+  }
+  .stime-post-list li .footer>div {
+      margin-left: 20px;
+      margin-right: 0;
+  }
+  .stime-post-list li:nth-child(even) {
+      margin-top: 0;
+  }
+  .stime-comment-list li .footer span {
+      display: inline-block;
+  }
+  .stime-more-post {
+      margin-left: 30px;
+  }
+  .stime-more-post:before {
+      content: '';
+      height: 8px;
+      width: 40px;
+      background-color: #000;
+      opacity: .2;
+      border-radius: 50%;
+      position: absolute;
+      top: 42px;
+      left: 0;
+  }
+  .stime-post-list li .footer>div:hover,.stime-post-list li .header span:hover,.stime-post-list li .content:hover {
+      transform: translateY(0);
+  }
+  .stime-post-list li .header {
+      display: flex;
+  }
+  .stime-post-list li .header span {
+      margin-right: 10px;
+  }
+  
+  
+  
+  
+  
+  /*图集*/
+  .stime-post-list li .content .gallery.type-a a, .stime-post-list li .content .gallery.type-b a {
+      height: 80px;
+  }
+  .stime-post-list li .content .gallery.type-d a, .stime-post-list li .content .gallery.type-e a {
+      height: 100px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  }
+  
+  
+  @media screen and (max-width: 370px) {
+  .xgplayer-music .xgplayer-time,.xgplayer-music .xgplayer-progress{
+      display: none;
+  }
+  .xgplayer-music .xgplayer-time {
+      margin-left: 0 !important;
+      top: 0 !important;
+      line-height: 50px !important;
+  }
+  
+  }
+  
+  @media screen and (max-width: 400px) {
+  .stime-post-list li .content .gallery.type-a a, .stime-post-list li .content .gallery.type-b a {
+      height: 70px;
+  }  
+  .stime-post-list li .content .gallery.type-d a, .stime-post-list li .content .gallery.type-e a {
+      height: 80px;
+  }  
+  .stime-post-list li .content iframe {
+      height: 150px;
+  }
+  .xgplayer-music .xgplayer-progress{
+      display: none;
+  }
+  .xgplayer-music .xgplayer-time {
+      margin-left: 0 !important;
+      top: 0 !important;
+      line-height: 50px !important;
+  }
+  
+  .stime-right-sidebar .close {
+      top: 0;
+      left: 0;
+      background-color: #6ca9d6;
+  }
+  
+  
+  }
+  
+  @media screen and (min-width:401px) and (max-width:500px){
+  .stime-post-list li .content .gallery.type-a a, .stime-post-list li .content .gallery.type-b a {
+      height: 80px;
+  }  
+  .stime-post-list li .content .gallery.type-d a, .stime-post-list li .content .gallery.type-e a {
+      height: 100px;
+  }  
+  .stime-post-list li .content iframe {
+      height: 200px;
+  }
+  .xgplayer-music .xgplayer-progress{
+      display: none;
+  }
+  .xgplayer-music .xgplayer-time {
+      margin-left: 0 !important;
+      top: 0 !important;
+      line-height: 50px !important;
+  }
+  
+  
+  }
+  
+  @media screen and (min-width:501px) and (max-width:600px){
+  .stime-post-list li .content .gallery.type-a a, .stime-post-list li .content .gallery.type-b a {
+      height: 100px;
+  }  
+  .stime-post-list li .content .gallery.type-d a, .stime-post-list li .content .gallery.type-e a {
+      height: 120px;
+  }  
+  .stime-post-list li .content iframe {
+      height: 240px;
+  }
+  }
+  
+  
+  @media screen and (min-width:601px) and (max-width:700px){
+  .stime-post-list li .content .gallery.type-a a, .stime-post-list li .content .gallery.type-b a {
+      height: 60px;
+  }  
+  .stime-post-list li .content .gallery.type-d a, .stime-post-list li .content .gallery.type-e a {
+      height: 70px;
+  }  
+  .stime-post-list li .content iframe {
+      height: 120px;
+  }
+  .xgplayer-music .xgplayer-time,.xgplayer-music .xgplayer-progress{
+      display: none;
+  }
+  }
+  
+  @media screen and (min-width:701px) and (max-width:850px){
+  .stime-post-list li .content .gallery.type-a a, .stime-post-list li .content .gallery.type-b a {
+      height: 80px;
+  }  
+  .stime-post-list li .content .gallery.type-d a, .stime-post-list li .content .gallery.type-e a {
+      height: 90px;
+  }  
+  .stime-post-list li .content iframe {
+      height: 150px;
+  }
+  .xgplayer-music .xgplayer-progress{
+      display: none;
+  }
+  }
+  
+  
+  @media screen and (min-width:851px) and (max-width:1150px){
+  
+  .stime-post-list li .content iframe {
+      height: 200px;
+  }
   }
