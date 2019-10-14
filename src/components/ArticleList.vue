@@ -72,7 +72,7 @@ export default {
 </script>
 
 <style scoped>
-@import url("//at.alicdn.com/t/font_1449684_w1g3hwq701.css");
+
 .iconfont{
     padding-right: 4px;
 }

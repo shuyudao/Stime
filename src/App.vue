@@ -1,5 +1,5 @@
 <template>
-  <div id="app" v-if="loadend">
+  <div id="app">
     <HomeHeader :themedata="data"></HomeHeader>
     <keep-alive>
         <router-view v-if="$route.meta.keepAlive"></router-view>

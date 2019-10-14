@@ -7,12 +7,14 @@
     </div>
     <h2 v-if="post.title==null" style="text-align:center">加载内容...</h2>
     <Comment :csrfToken="csrfToken" v-if="post.allowComment=='1'"></Comment>
+
   </div>
 </template>
 
 <script>
 import { request } from "../network/request";
 import Comment from "../components/common/Comment";
+
 
 export default {
   name: "Article",
