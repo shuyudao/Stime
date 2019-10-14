@@ -1,7 +1,7 @@
 import axios from 'axios'
 export function request(config) {
   const instance = axios.create({
-    baseURL:'http://localhost/index.php',
+    baseURL:'/index.php',
     timeout:8000
   })
 
