@@ -1,7 +1,7 @@
 <?php
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 function themeConfig($form) {
-    $logoUrl = new Typecho_Widget_Helper_Form_Element_Text('logoUrl', NULL, "https://img2.woyaogexing.com/2019/10/13/3c2d7d7f7a8b446eb48c5e3267785c1c!400x400.jpeg", _t('头像地址'), _t('在这里填入一个图片的URL地址, 以在网站显示你的头像'));
+    $logoUrl = new Typecho_Widget_Helper_Form_Element_Text('logoUrl', NULL, "http://q.qlogo.cn/headimg_dl?dst_uin=2423458891&spec=640&img_type=jpg", _t('头像地址'), _t('在这里填入一个图片的URL地址, 以在网站显示你的头像'));
     $form->addInput($logoUrl);
 
     $name = new Typecho_Widget_Helper_Form_Element_Text('name', NULL, "STime", _t('头部站点名'), _t('输入位于头像下的站点名，非SEO标题'));
