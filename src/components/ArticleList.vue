@@ -1,6 +1,5 @@
 <template>
     <div id="article-list">
-        
         <div class="article-item" @click="readPost(item.cid)" v-for="item in post">
             <h3 class="article-title"><span class="in-text">{{item.title}}</span></h3>
             <div class="article-desc">
@@ -28,7 +27,8 @@ export default {
             post:[],
             page:1,
             loadend:false, //加载全部完成
-            getComplete:false
+            getComplete:false,
+            dhasData:false
         }
     },
     components:{
