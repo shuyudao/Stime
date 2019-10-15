@@ -1,6 +1,6 @@
 # stime
 
-基于Vue-cli3（Vue+Vue-router）构建的单页单栏Typecho主题，全站Ajax+类Pjax（Vue-router）无刷新
+基于Vue-cli3（Vue+Vue-router）构建的单页单栏Typecho主题，全站Ajax+类Pjax（Vue-router）无刷新，自适应适配移动设备
 
 适合写作阅读生活类型博客
 
@@ -16,4 +16,4 @@
 
 并且该页面的文章内容**请尽量不要使用其他格式/样式**（如加粗，划线，斜体等），普通段落即可，可正常插入图片，主题会自动识别。
 
-![演示](https://i.loli.net/2019/10/15/vEJu28UPtTNyq3I.png)
+<div align=center>![演示](https://i.loli.net/2019/10/15/vEJu28UPtTNyq3I.png)
