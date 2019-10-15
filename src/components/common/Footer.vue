@@ -37,7 +37,7 @@ export default {
     line-height: 60px;
 }
 #footer-main a{
-    color: #666;
+    color: #666!important;
 }
 @media screen and (max-width: 520px) {
     #footer-main p{
