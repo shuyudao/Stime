@@ -41,7 +41,6 @@ export default {
     }
   },
   created() {
-    
     header.scrollIntoView();
     this.cid = this.$route.params.id;
     this.getPost();
