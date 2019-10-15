@@ -12,7 +12,7 @@
 
 [Restful插件](http://shuyudao.top/usr/uploads/Restful.zip)
 
-[Stime主题]("http://shuyudao.top/usr/uploads/Stime.zip)
+[Stime主题](http://shuyudao.top/usr/uploads/Stime.zip)
 
 ## 主题特点
 
