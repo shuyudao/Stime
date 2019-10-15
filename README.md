@@ -4,6 +4,15 @@
 
 适合写作阅读生活类型博客
 
+## 使用说明
+
+首先安装，主题的依赖typecho插件（源码目录中的Restful.zip），然后将dist目录下的所有文件上传到 `~/themes/stime` 目录下，完成。
+
+或者直接下载安装版，按照正常的步骤安装即可：
+
+[Restful插件]("http://shuyudao.top/usr/uploads/Restful.zip")
+[Stime主题]("http://shuyudao.top/usr/uploads/Stime.zip")
+
 ## 主题特点
 
 1、单栏、简约、适合阅读写作
@@ -38,8 +47,3 @@
 
 ![批注 2019-10-15 111327.png](https://i.loli.net/2019/10/15/MzSgEKdIuOe1PNA.png)
 
-## 使用说明
-
-首先安装，主题的依赖typecho插件（源码目录中的Restful.zip），然后将dist目录下的所以文件上传到 `~/themes/stime` 目录下，完成。
-
-或者直接下载安装版，按照正常的步骤安装即可：
