@@ -32,7 +32,6 @@ import { request } from "../../network/request";
 import CommentItem from "./CommentItem";
 import Load from "./Load";
 import common from "../../assets/js/common";
-
 export default {
   name: "CommentList",
   data() {
@@ -66,7 +65,6 @@ export default {
       const reg = new RegExp(
         "^[a-z0-9]+([._\\-]*[a-z0-9])*@([a-z0-9]+[-a-z0-9]*[a-z0-9]+.){1,63}[a-z0-9]+$"
       );
-
       if (
         (this.comment.mail != "" &&
         this.comment.author != "" &&
@@ -78,12 +76,10 @@ export default {
           this.alert = "你输入的不是邮箱";
           return false;
         }
-
         const start = window.location.href.indexOf("pid=");
         if (start > -1) {
           this.comment.parent = window.location.href.substr(start + 4, 10);
         }
-
         request({
           method: "post",
           url: "/api/comment",
@@ -97,9 +93,7 @@ export default {
             this.getComments();
             this.comment.parent = null;
             this.comment.text = "";
-
             window.history.pushState({}, "", "./" + this.comment.cid);
-
             if (e.status == "error") {
               this.alert = e.message;
             } else {
@@ -151,8 +145,15 @@ export default {
   },
   watch: {
     $route() {
-      if(window.location.href.indexOf("#comments")){
+      if(window.location.href.indexOf("#comments")>=0){
         this.placetxt = "回复它："
+      }else{
+
+        this.comment.cid = this.$route.params.id;
+        this.page = 1;
+        this.loadend = false;
+        this.comments = [];
+        this.getComments();
       }
     }
   }
@@ -196,7 +197,6 @@ export default {
   top: -11px;
   left: 20px;
 }
-
 #commentsList{
     margin-top: 10px;
 }
@@ -205,7 +205,6 @@ export default {
     width: 100%;
     margin: 0 auto;
     margin-top: 10px;
-
   }
   input{
     width: 100%;
