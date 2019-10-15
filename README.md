@@ -42,7 +42,7 @@
 
 ![批注 2019-10-15 111218.png](https://i.loli.net/2019/10/15/cvkgUMaq8DJy6wr.png)
 
-![批注 2019-10-15 111259.png](https://i.loli.net/2019/10/15/zET14cGbWulYetR.png)
+<p align="center"><a target="_blank" rel="noopener noreferrer"><img src="https://i.loli.net/2019/10/15/zET14cGbWulYetR.png"></a></p>
 
 ![批注 2019-10-15 111405.png](https://i.loli.net/2019/10/15/aUWbATozHpKf1YO.png)
 
