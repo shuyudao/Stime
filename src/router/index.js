@@ -30,8 +30,7 @@ const router = new VueRouter({
             meta: { 
                 keepAlive: true 
             }
-        },
-        {path:"/index.php/archives/:id",component:Article},
+        }
     ],
     mode:'history'
 })
