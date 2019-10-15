@@ -11,7 +11,8 @@
 或者直接下载安装版，按照正常的步骤安装即可：
 
 [Restful插件](http://shuyudao.top/usr/uploads/Restful.zip)
-[Stime主题]("http://shuyudao.top/usr/uploads/Stime.zi)
+
+[Stime主题]("http://shuyudao.top/usr/uploads/Stime.zip)
 
 ## 主题特点
 
