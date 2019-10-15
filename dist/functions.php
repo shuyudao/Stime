@@ -10,6 +10,6 @@ function themeConfig($form) {
     $notice = new Typecho_Widget_Helper_Form_Element_Text('notice', NULL, "朗月清风，浓烟暗雨，天教憔悴度芳姿.", _t('头部通知文字'), _t('输入位于站点名下的文字内容'));
     $form->addInput($notice);
 
-    $footer = new Typecho_Widget_Helper_Form_Element_Text('footer', NULL, "© 2018 - 2019  ❤ STime & Typecho", _t('底部版权文字'), _t('输入位于站底部的版权文字，建议尊重保留主题作者版权'));
+    $footer = new Typecho_Widget_Helper_Form_Element_Text('footer', NULL, "© 2018 - 2019  ❤ <a href='https://github.com/shuyudao/Stime'>STime</a> & Typecho", _t('底部版权文字'), _t('输入位于站底部的版权文字，建议尊重保留主题作者版权'));
     $form->addInput($footer);
 }
