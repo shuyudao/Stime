@@ -50,6 +50,7 @@ export default {
       this.cid = this.$route.params.id;
     },
     cid() {
+      this.post = {};
       this.getPost();
     }
   }
