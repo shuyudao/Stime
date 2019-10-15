@@ -16,4 +16,4 @@
 
 并且该页面的文章内容**请尽量不要使用其他格式/样式**（如加粗，划线，斜体等），普通段落即可，可正常插入图片，主题会自动识别。
 
-<p align="center"><a target="_blank" rel="noopener noreferrer"><img width="100" src="https://i.loli.net/2019/10/15/vEJu28UPtTNyq3I.png"></a></p>
+<p align="center"><a target="_blank" rel="noopener noreferrer"><img src="https://i.loli.net/2019/10/15/vEJu28UPtTNyq3I.png"></a></p>
