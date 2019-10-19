@@ -15,7 +15,7 @@
           v-model="comment.text"
           :placeholder="placetxt"
         ></textarea>
-        <button id="pushCom" @click="pushCom">提交评论</button>
+        <button id="pushCom" @click="pushCom">{{pushComtxt}}</button>
       </div>
     </div>
     <div id="commentsList" ref="commentsList">
@@ -40,6 +40,7 @@ export default {
       page: 1,
       alert: "",
       placetxt:"不说几句就不够意思了:)",
+      pushComtxt:"提交评论",
       comment: {
         cid: null,
         parent: null,
@@ -80,6 +81,7 @@ export default {
         if (start > -1) {
           this.comment.parent = window.location.href.substr(start + 4, 10);
         }
+        this.pushComtxt = "提交中";
         request({
           method: "post",
           url: "/api/comment",
@@ -87,6 +89,7 @@ export default {
           withCredentials:true
         })
           .then(e => {
+            this.pushComtxt = "提交评论";
             this.page = 1;
             this.loadend = false;
             this.comments = [];
