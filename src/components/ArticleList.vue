@@ -35,6 +35,8 @@ export default {
         Load
     },
     created(){
+        console.log("Stime主题：https://github.com/shuyudao/Stime");
+        
         this.defaulttitle = document.title
         this.getArticles()
     },
