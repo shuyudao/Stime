@@ -36,14 +36,15 @@ export default {
         const tpc = document.title.split("-");
         document.title = tpc[0]+"-"+e.data.title;
         this.csrfToken = e.data.csrfToken;
-        Prism.highlightAll();
+        setTimeout(function () {
+          Prism.highlightAll();
+        },100);
       });
     }
   },
   created() {
     header.scrollIntoView();
     this.cid = this.$route.params.id;
-    this.getPost();
   },
   watch: {
     $route() {
@@ -52,6 +53,7 @@ export default {
     cid() {
       this.post = {};
       this.getPost();
+      Prism.highlightAll();
     }
   }
 };
