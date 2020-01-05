@@ -108,6 +108,7 @@ export default {
 .article-desc p{
     width: 100%;
     word-break: break-all;
+    font-family: "noto serif sc",serif;
 }
 .t-tag{
     color: #65737E

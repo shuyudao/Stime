@@ -12,4 +12,14 @@ function themeConfig($form) {
 
     $footer = new Typecho_Widget_Helper_Form_Element_Text('footer', NULL, "© 2018 - 2019  ❤ <a href='https://github.com/shuyudao/Stime'  style='color: #666;text-decoration: underline;'>STime</a> & Typecho", _t('底部版权文字'), _t('输入位于站底部的版权文字，建议尊重保留主题作者版权'));
     $form->addInput($footer);
+
+    $topBarBlock = new Typecho_Widget_Helper_Form_Element_Checkbox('topBarBlock', 
+    array(
+        'showPosts' => _t('显示“文章”模块'),
+        'showTimes' => _t('显示“时间”模块'),
+        'showArchive' => _t('显示“归档”模块'),),
+    array('showPosts', 'showTimes', 'showArchive'), _t('页面模块显示控制'));
+
+    $form->addInput($topBarBlock->multiMode());
+    
 }
