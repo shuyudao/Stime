@@ -1,5 +1,7 @@
 # Stime
 
+v1.0.1 2020-1-5
+
 基于Vue-cli3（Vue+Vue-router）构建的单页单栏简约Typecho主题，全站Ajax+类Pjax（Vue-router）无刷新，自适应适配移动设备
 
 适合写作阅读生活类型博客
@@ -8,13 +10,15 @@
 
 ## 使用说明
 
-首先安装，主题的依赖typecho插件（源码目录中的Restful.zip），然后将dist目录下的所有文件上传到 `~/themes/stime` 目录下，完成。
+直接点击下方下载安装版，按照正常的步骤安装即可：
 
-或者直接下载安装版，按照正常的步骤安装即可：
+[> Restful插件](http://shuyudao.top/usr/uploads/Restful.zip)
 
-[Restful插件](http://shuyudao.top/usr/uploads/Restful.zip)
+[> Stime主题](http://shuyudao.top/usr/uploads/Stime.zip)
 
-[Stime主题](http://shuyudao.top/usr/uploads/Stime.zip)
+
+或者从本仓库源码安装，首先，安装主题的必须依赖typecho插件（如上目录中的Restful.zip），然后将dist目录下的所有文件上传到 `~/themes/stime` 目录下，完成。
+
 
 ## 主题特点
 
@@ -25,6 +29,8 @@
 3、时间轴模块，支持图文并茂，每一分每一秒都值得记录
 
 4、代码高亮、组件懒加载、Gzip压缩、独立配置...
+
+5、可配置显示模块
 
 ## 主题说明
 
