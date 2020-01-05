@@ -1,12 +1,19 @@
 # Stime
 
-v1.0.1 2020-1-5
 
 基于Vue-cli3（Vue+Vue-router）构建的单页单栏简约Typecho主题，全站Ajax+类Pjax（Vue-router）无刷新，自适应适配移动设备
 
 适合写作阅读生活类型博客
 
 > 当前主题持续开发中，任何问题请发issues
+
+## 更新
+
+**v1.0.1  2020-1-5**
+
+更新内容：修复bug若干，增加了可选模块显示，你可以自己决定是否显示哪个模块了！！！ 注意更新需要重新安装Restful的插件。
+
+详情：[点击查看](http://www.shuyudao.top/index.php/archives/751)
 
 ## 使用说明
 
